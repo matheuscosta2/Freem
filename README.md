@@ -1,3 +1,10 @@
+<div align="center">
+<img src="https://github.com/matheuscosta2/ecotour/assets/63138278/1a9b38f2-f3c3-42dd-ae3e-d7411d872f19" />
+
+</div>
+
+
+
 # Projeto de Turismo Sustentável 🌍
 
 Este projeto é dedicado ao desenvolvimento de um site que promove o turismo sustentável. Nosso objetivo é ajudar os viajantes a fazerem escolhas mais conscientes e sustentáveis durante suas viagens.
