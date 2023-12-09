@@ -25,4 +25,4 @@ Este projeto se alinha com os Objetivos de Desenvolvimento Sustentável (ODS) 13
 
 ## Desenvolvimento 🤝
 
-Alexander Sérgio, Alez Azevedo, Leandro Matheus E. Schalemberg, Matheus Manuel Costa S. Santos e Renata Ferreira de Castro
+Alexander Sérgio, Alex Maciel de Azevedo, Leandro Matheus E. Schalemberg, Matheus Manuel Costa S. Santos e Renata Ferreira de Castro
