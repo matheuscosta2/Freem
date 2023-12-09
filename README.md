@@ -1,6 +1,3 @@
-# ecotour
-Repositorio do projeto integrador proz tecnologia - turma 12 - objetivos de sustentativilidade ONU
--------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Projeto de Turismo Sustentável 🌍
 
 Este projeto é dedicado ao desenvolvimento de um site que promove o turismo sustentável. Nosso objetivo é ajudar os viajantes a fazerem escolhas mais conscientes e sustentáveis durante suas viagens.
