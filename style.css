@@ -1,0 +1,20 @@
+*{
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.cabeçalho{
+    display: flex;
+    justify-content: space-around;
+}
+
+.botão2{
+    text-align: center;
+}
+
+.detalhes_cidades{
+    display: flex;
+    justify-content: space-around;
+}
