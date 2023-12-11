@@ -1,7 +1,8 @@
 *{
-    background-color: black;
+    background-color: rgb(19, 18, 18);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     color: white;
-    margin: 0;
+    margin: 2px;
     padding: 0;
 }
 
@@ -10,11 +11,63 @@
     justify-content: space-around;
 }
 
+.botão{
+    padding: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
 .botão2{
     text-align: center;
+}
+
+.botão_central{
+   
+    padding: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
 .detalhes_cidades{
     display: flex;
     justify-content: space-around;
+   
+}
+
+
+.logo{
+    margin-right: 5px;
+}
+
+.logo2{
+    margin-right: 5px;
+}
+
+.rodape{
+    display: flex; 
+    justify-content: space-around;
+    gap: 60em;
+    margin-right: 10em;
+}
+
+.rodape_descrição{
+    margin-right: 15em;
+}
+
+.rodape_links{
+    margin-right: 7em;
+}
+
+.links{
+    list-style: none;
+}
+
+.detalhes_lista{
+    list-style: none;
+}
+
+.detalhes_lista2{
+    list-style: none;
 }
