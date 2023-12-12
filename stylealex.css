@@ -1,0 +1,12 @@
+img {
+  max-width: 20%;
+  height: auto;
+  
+
+}
+
+.teste{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-column: 10px;
+}
