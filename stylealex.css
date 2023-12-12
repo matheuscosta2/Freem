@@ -1,5 +1,21 @@
+*{
+  margin: 30;
+  padding: 30;
+  box-sizing: border-box;
+}
 .teste{
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 50% ;
   grid-column: 10px;
+}
+.paragrafo{
+  margin-left: 5px;
+}
+
+
+
+.imagem{
+
+  float: left;
+  width: 500px;
 }
