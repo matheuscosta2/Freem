@@ -1,73 +1,75 @@
-*{
-    background-color: rgb(19, 18, 18);
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+* {
+    background-color: rgb(29, 28, 28);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
     margin: 2px;
     padding: 0;
 }
 
-.cabeçalho{
+.cabeçalho {
     display: flex;
     justify-content: space-around;
 }
 
-.botão{
+
+
+.botão {
     padding: 10px;
     text-decoration: none;
     cursor: pointer;
     border-radius: 5px;
 }
 
-.botão2{
+.botão2 {
     text-align: center;
 }
 
-.botão_central{
-   
+.botão_central {
+
     padding: 10px;
     text-decoration: none;
     cursor: pointer;
     border-radius: 5px;
 }
 
-.detalhes_cidades{
+.detalhes_cidades {
     display: flex;
     justify-content: space-around;
-   
+
 }
 
 
-.logo{
+.logo {
     margin-right: 5px;
 }
 
-.logo2{
+.logo2 {
     margin-right: 5px;
 }
 
-.rodape{
-    display: flex; 
+.rodape {
+    display: flex;
     justify-content: space-around;
     gap: 60em;
     margin-right: 10em;
 }
 
-.rodape_descrição{
+.rodape_descrição {
     margin-right: 15em;
 }
 
-.rodape_links{
+.rodape_links {
     margin-right: 7em;
 }
 
-.links{
+.links {
     list-style: none;
 }
 
-.detalhes_lista{
+.detalhes_lista {
     list-style: none;
 }
 
-.detalhes_lista2{
+.detalhes_lista2 {
     list-style: none;
 }
