@@ -1,7 +1,29 @@
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Verdana, Tahoma, sans-serif;
+  text-align: center; /*coloquei isso para a imagem principal ficar no centro */
+}
+.img_principal {
+  max-width: 90%;
+  border-radius: 10px;
+  text-align: center;
+  margin: auto;
 }
 
+.img {
+  max-width: 20%;
+  height: auto;
+}
+
+.img_carbono {
+  max-width: 90%;
+  height: auto;
+  border-radius: 10px;
+}
+
+li {
+  list-style-type: none;
+}
+/* 
 header {
   background-color: #ffffff;
   padding: 20px;
@@ -13,9 +35,7 @@ a {
   color: #000000;
 }
 
-li {
-  list-style-type: none;
-}
+
 
 .marca_dagua {
   font-size: 30px;
@@ -32,7 +52,7 @@ li {
   margin: 0 10px;
 }
 
-.botao_login {
+.botao_login1 {
   background-color: #000000;
   color: white;
   padding: 10px 20px;
@@ -41,9 +61,14 @@ li {
   font-weight: bold;
 }
 
-.img_principal {
-  width: 90%;
+.botao_login2 {
+  margin-left: 160px; /* coloquei isso pra ele ficar no canto 8 
+  background-color: #000000;
+  color: white;
+  padding: 10px 20px;
   border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .titulo {
@@ -55,13 +80,8 @@ section {
   text-align: center;
 }
 
-.img {
-  max-width: 20%;
-  height: auto;
-}
-
 footer {
   background-color: #f8f9fa;
   padding: 20px;
   text-align: center;
-}
+} */
