@@ -23,7 +23,7 @@ body {
 li {
   list-style-type: none;
 }
-
+/* 
 header {
   background-color: #ffffff;
   padding: 20px;
@@ -34,6 +34,8 @@ a {
   text-decoration: none;
   color: #000000;
 }
+
+
 
 .marca_dagua {
   font-size: 30px;
@@ -60,7 +62,7 @@ a {
 }
 
 .botao_login2 {
-  margin-left: 160px; /* coloquei isso pra ele ficar no canto 8 */
+  margin-left: 160px; /* coloquei isso pra ele ficar no canto 8 
   background-color: #000000;
   color: white;
   padding: 10px 20px;
@@ -82,4 +84,4 @@ footer {
   background-color: #f8f9fa;
   padding: 20px;
   text-align: center;
-}
+} 
