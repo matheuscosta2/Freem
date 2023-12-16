@@ -1,4 +1,4 @@
-/*
+
 
 * {
     background: rgb(255, 255, 255);
@@ -10,7 +10,9 @@
 
 .cabeçalho {
     display: flex;
-    justify-content: space-evenly
+    justify-content: space-evenly;
+    margin-top: 2.5em;
+    
 }
 
 .comparador{
@@ -18,27 +20,46 @@
 }
 
 .container_imagens {
-   
+    margin-left:0.5em;
     margin-top: 3em;
-    width: 98%;
+    width: 99%;
     box-shadow:
     0px 0px 21px 13px rgba(3, 3, 3, 0.3),
     21px 11px 13px 0px rgba(0, 0, 0, 0.3);
     border-radius: 8px;
 }
 
-.container_imagens2{
-   
+.imagens{
+    display: flex;
+    justify-content: center;
+    gap: 5em;
+}
+
+h3{
     margin-top: 3em;
-    width: 98%;
+    margin-bottom: 1.5em;
+}
+
+.imagens2{
+    display: flex;
+    justify-content: center;
+    gap: 5em;
+}
+
+.imagem{
+    width: 720px;
+}
+
+.container_imagens2{
+    margin-left:0.5em;
+    margin-top: 3em;
+    width: 99%;
     box-shadow:
     0px 0px 21px 13px rgba(3, 3, 3, 0.3),
     21px 11px 13px 0px rgba(0, 0, 0, 0.3);
     border-radius: 8px;
 }
-.imagens{
-    justify-items: center;
-}
+
 
 
 .botão {
@@ -94,6 +115,7 @@
 
 .rodape_links {
     margin-right: 7em;
+    margin-top: 2.5em;
 }
 
 .links {
@@ -101,11 +123,22 @@
 }
 
 .detalhes_lista {
+    padding: 1.5em;
     list-style: none;
+    box-shadow:
+    0px 0px 21px 13px rgba(3, 3, 3, 0.3),
+    21px 11px 13px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    
 }
 
 .detalhes_lista2 {
+    padding: 1.5em;
     list-style: none;
+    box-shadow:
+    0px 0px 21px 13px rgba(3, 3, 3, 0.3),
+    21px 11px 13px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
 }
 
 .barra{
@@ -114,7 +147,10 @@
     background: rgb(255, 255, 255);
     border: solid 2px rgb(61, 58, 58);
     border-radius: 10%;
+}
 
+footer{
+    margin-top: 1em;
 }
 
 .imagem {
