@@ -4,7 +4,12 @@ body {
   font-family: "Inter", sans-serif;
   margin: 0;
   padding: 0;
-  color: #023047;
+  color: #000000;
+}
+
+
+li {
+  list-style: none;
 }
 
 .page {
@@ -15,7 +20,7 @@ body {
   justify-content: center;
   width: 100%;
   height: 100vh;
-  background-color: #0ca86f;
+  background-color: #000000;
 }
 
 .formLogin {

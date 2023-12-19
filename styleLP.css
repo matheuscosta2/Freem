@@ -18,7 +18,7 @@ body {
 } */
 #logo {
   font-size: 25px;
-
+  
   /*coloquei isso para o logo ficar no inicio */
 }
 
@@ -26,18 +26,26 @@ body {
   max-width: 70px;
 }
 .logo_menu {
+  color: #3E8914;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 30px;
+  margin-left: 3rem;
+}
+
+.icon_cabecalho{
+  max-width: 1.5rem;
 }
 
 nav {
+  background-color: #f5f5f5;
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 30px;
+  
 }
 
 a:hover {
@@ -47,7 +55,8 @@ a:hover {
 .lista_menu {
   display: flex;
   gap: 3rem;
-  margin-right: 9.5rem;
+  margin-right: 3rem;
+  align-items: center;
 }
 
 .img_principal {
@@ -137,8 +146,8 @@ li {
 }
 
 .botao_login1 {
-  background-color: #000000;
-  color: white;
+  background-color: #3E8914;
+  color: #E8FCCF;
   padding: 10px 20px;
   border-radius: 10px;
   text-decoration: none;
@@ -147,8 +156,8 @@ li {
 
 .botao_login2 {
   /* margin-left: 10px; coloquei isso pra ele ficar no canto 8 */
-  background-color: #000000;
-  color: white;
+  background-color: #3E8914;
+  color: #E8FCCF;
   padding: 10px 20px;
   border-radius: 10px;
   text-decoration: none;
