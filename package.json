@@ -1,0 +1,24 @@
+{
+  "name": "freem",
+  "version": "1.0.0",
+  "description": "<div align=\"center\">\r <img src=\"https://github.com/matheuscosta2/ecotour/assets/63138278/1a9b38f2-f3c3-42dd-ae3e-d7411d872f19\" alt=\"Logo do Projeto Ecotour\" />",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "commit": "git-cz"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@commitlint/cli": "^18.4.3",
+    "@commitlint/config-conventional": "^18.4.3",
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^8.0.3"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
