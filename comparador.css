@@ -1,7 +1,7 @@
 
 
 * {
-    background: rgb(255, 255, 255);
+    background: rgb(245, 232, 209);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: rgb(0, 0, 0);
     margin: 2px;
@@ -26,13 +26,23 @@
     box-shadow:
     0px 0px 21px 13px rgba(3, 3, 3, 0.3),
     21px 11px 13px 0px rgba(0, 0, 0, 0.3);
-    border-radius: 8px;
+    border-radius: 10px;
 }
 
 .imagens{
+    background: rgb(241, 217, 168);
     display: flex;
     justify-content: center;
     gap: 5em;
+}
+
+.x-comparador{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+h2{
+    margin-top: 2em;
 }
 
 h3{
@@ -41,6 +51,7 @@ h3{
 }
 
 .imagens2{
+    background: rgb(241, 217, 168);
     display: flex;
     justify-content: center;
     gap: 5em;
@@ -57,7 +68,7 @@ h3{
     box-shadow:
     0px 0px 21px 13px rgba(3, 3, 3, 0.3),
     21px 11px 13px 0px rgba(0, 0, 0, 0.3);
-    border-radius: 8px;
+    border-radius: 10px;
 }
 
 
@@ -94,6 +105,10 @@ h3{
     margin-top: 2em;
 }
 
+.figure-texto{
+   font-weight: bold;
+}
+
 .logo {
     margin-right: 5px;
 }
@@ -115,7 +130,7 @@ h3{
 
 .rodape_links {
     margin-right: 7em;
-    margin-top: 2.5em;
+    margin-top: 3.5em;
 }
 
 .links {
@@ -141,13 +156,6 @@ h3{
     border-radius: 8px;
 }
 
-.barra{
-    width: 25em;
-    height: 2px;
-    background: rgb(255, 255, 255);
-    border: solid 2px rgb(61, 58, 58);
-    border-radius: 10%;
-}
 
 footer{
     margin-top: 1em;
@@ -156,4 +164,5 @@ footer{
 .imagem {
     border-radius: 10px;
 }
+
 
