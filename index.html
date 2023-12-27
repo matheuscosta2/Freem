@@ -4,8 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styleLP.css">
   <title>Freem</title>
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="carroussel-css-js/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="styleLP.css">
 </head>
 
 <body>
@@ -26,6 +29,8 @@
   <div>
     <img class="img_principal" src="img_leandro/img_principal_2.jpg" alt="Imagem arvore">
   </div>
+
+
   <section id="compara_cidade"><!-- tag de divisão do botão flutuante de comparação das cidades -->
     <h1 id="compara_titulo">Descubra destinos ecológicos</h1>
     <p>Comparador de emissão de CO² entre cidades</p>
@@ -35,37 +40,245 @@
     <input type="text" name="cidadeB" id="cidadeB">
     <button class="compara_botao"><a class="cor_botao" href="/">Comparar</a></button>
   </section><br><br><br><br><br>
+
+
   <div> <!-- tag de divisão dos destinos populares -->
     <div id="destinos_pop">
       <h2>Destinos populares</h2>
       <button id="botao_dest_pop"><a class="cor_botao" href="/">Acesse aqui</a></button>
     </div>
-    <p>Aqui você encontra as cidades mais sustentáveis e com a menor emissão de carbono do Brasil</p>
-    <img class="img" src="img_leandro/Destino_pop_1.jpg" alt="Imagem de uma passarela">
-    <img class="img" src="img_leandro/Destino_pop_2.jpg" alt="Imagem de um mar com um barco">
-    <img class="img" src="img_leandro/Destino_pop_3.jpg" alt="Imagem de uma trilha na mata">
-    <img class="img" src="img_leandro/Destino_pop_4.jpg" alt="Imagem de um rio">
-    <h3>Alagoas</h3>
-    <p>Alagoas é um dos estados mais bonitos do Brasil, com praias paradisíacas e uma cultura riquíssima.</p>
-    <h3>Florianópolis</h3>
-    <p>Florianópolis é a capital do estado de Santa Catarina, no sul do Brasil. É formada principalmente pela Ilha de Santa Catarina, com 54 km de praias, lagoas, dunas e montanhas cobertas de Mata Atlântica.</p>
-    <h3>Bonito</h3>
-    <p>Bonito é um município brasileiro da região Centro-Oeste, situado no estado de Mato Grosso do Sul. Sua população, conforme estimativas do IBGE de 2019, era de 21 867 habitantes.</p>
-    <h3>Chapada dos Veadeiros</h3>
-    <p>A Chapada dos Veadeiros é uma região de serras, situada no nordeste do estado de Goiás, Brasil. É conhecida pelos seus rios de águas cristalinas, cachoeiras e piscinas naturais.</p>
+    <span>Aqui você encontra as cidades mais sustentáveis e com a menor emissão de carbono do Brasil</span>
   </div>
 
-  <div> <!-- tag de divisão dos serviços do site -->
-    <h3>Certificção Ecológica</h3>
-    <p>Oferecemos destinos ecológicos com baixas emissoões de carbono. Se vocÇe encontrar uma opção mais sustentável em outrolugar, avise-nos</p>
-    <img class="img" src="img_leandro/certificado_eco.png" alt="Selo certificado">
-    <h3>Hotéis Flexíveis</h3>
-    <p>Precisa viajar para um lugar ecológico e ficar em um hotel sustentável? Também possuímos essa ferramenta para a sua comodidade</p>
-    <img class="img" src="img_leandro/hotel_icon.png" alt="Selo hotel">
-    <h3>Locais limpos e ecológicos</h3>
-    <p>Se você quer viajar para um local livre de poluição e com baixa emissão de carbono, nós temos a solução para você. Encontre os melhores destinos ecológicos do Brasil</p>
-    <img class="img" src="img_leandro/ecologico_icon.png" alt="Selo se energia eólica">
+  <div class="slide-container swiper">
+    <div class="slide-content">
+      <div class="card-wrapper swiper-wrapper">
+        <div class="card swiper-slide">
+          <div class="image-content">
+            <span class="overlay"></span>
+
+            <div class="card-image">
+              <img src="img_leandro/Destino_pop_1.jpg" class="card-img" alt="Imagem da chapada dos veadeiros">
+            </div>
+          </div>
+          <div class="card-content">
+            <h2 class="name">Chapada dos Veadeiros</h2>
+            <p class="description">A chapada dos veadeiros é totalmente Ecológica e sustentável, com baixa emissão de carbono</p><br><br>
+
+            <button class="button-carrossel">Veja mais</button>
+          </div>
+        </div>
+        <div class="card swiper-slide">
+          <div class="image-content">
+            <span class="overlay"></span>
+
+            <div class="card-image">
+              <img src="img_leandro/card-bonito-ms.png" class="card-img" alt="Imagem da chapada dos veadeiros">
+            </div>
+          </div>
+          <div class="card-content">
+            <h2 class="name">Bonito - MS</h2>
+            <p class="description">Bonito é uma cidade e centro de ecoturismo no estado brasileiro de Mato Grosso do Sul. A área é conhecida pelos rios de água translúcida, como o Rio da Prata repleto de peixes.</p>
+            </p>
+            <button class="button-carrossel">Veja mais</button>
+          </div>
+        </div>
+        <div class="card swiper-slide">
+          <div class="image-content">
+            <span class="overlay"></span>
+
+            <div class="card-image">
+              <img src="img_leandro/Card-Palhoca.jpg" class="card-img" alt="Imagem da chapada dos veadeiros">
+            </div>
+          </div>
+          <div class="card-content">
+            <h2 class="name">Palhoça - SC</h2>
+            <p class="description">A Guarda do Embaú é a principal atração turística de Palhoça, uma vila de pescadores localizado entre dunas, serra e rio e mar.</p><br>
+            </p>
+            <button class="button-carrossel">Veja mais</button>
+          </div>
+        </div>
+        <div class="card swiper-slide">
+          <div class="image-content">
+            <span class="overlay"></span>
+
+            <div class="card-image">
+              <img src="img_leandro/Card-rio-de-janeiro.jpg" class="card-img" alt="Imagem da chapada dos veadeiros">
+            </div>
+          </div>
+          <div class="card-content">
+            <h2 class="name">Rio de Janeiro - RJ</h2>
+            <p class="description">O Rio de Janeiro possui a maior floresta urbana do mundo, seja no céu, na terra ou no mar, a cidade oferece diversas opções de ecoturismo.</p><br>
+
+            <button class="button-carrossel">Veja mais</button>
+          </div>
+        </div>
+        <div class="card swiper-slide">
+          <div class="image-content">
+            <span class="overlay"></span>
+
+            <div class="card-image">
+              <img src="img_leandro/Card-Fernando-Noronha.jpg" class="card-img" alt="Imagem da chapada dos veadeiros">
+            </div>
+          </div>
+          <div class="card-content">
+            <h2 class="name">Fernando de Noronha - PE</h2>
+            <p class="description">Este Patrimônio Mundial Natural reconhecido pela UNESCO conta areias douradas, mar em tons de azul turquesa e verde esmeralda. Conta com um vida marinha esplendorosa.</p>
+            </p>
+            <button class="button-carrossel">Veja mais</button>
+          </div>
+        </div>
+        <div class="card swiper-slide">
+          <div class="image-content">
+            <span class="overlay"></span>
+
+            <div class="card-image">
+              <img src="img_leandro/Card-Jalapao.jpg" class="card-img" alt="Imagem da chapada dos veadeiros">
+            </div>
+          </div>
+          <div class="card-content">
+            <h2 class="name">Jalapão - TO</h2>
+            <p class="description">Entre dunas douradas, paisagens grandiosas, fervedouros e cachoeiras, conheça as maravilhas do Jalapão, um destino que conquista cada vez mais os amantes do ecoturismo.</p>
+            </p>
+            <button class="button-carrossel">Veja mais</button>
+          </div>
+        </div>
+        <div class="card swiper-slide">
+          <div class="image-content">
+            <span class="overlay"></span>
+
+            <div class="card-image">
+              <img src="img_leandro/Card-Parque-da_Pedra_da_Boca.jpg" class="card-img" alt="Imagem da chapada dos veadeiros">
+            </div>
+          </div>
+          <div class="card-content">
+            <h2 class="name">Parque Estadual Pedra da Boca - PB</h2>
+            <p class="description">O Parque possui uma formações rochosas de grande beleza cênica com ecoturismo focado para quem ama aventuras.</p>
+            </p>
+            <button class="button-carrossel">Veja mais</button>
+          </div>
+        </div>
+        <div class="card swiper-slide">
+          <div class="image-content">
+            <span class="overlay"></span>
+
+            <div class="card-image">
+              <img src="img_leandro/Card-Manaus.jpg" class="card-img" alt="Imagem da chapada dos veadeiros">
+            </div>
+          </div>
+          <div class="card-content">
+            <h2 class="name">Manaus - AM</h2>
+            <p class="description">A cahpada dos veadeiros é totalmente Ecológica e sustentável, com baixa emissão de carbono</p>
+            </p><br><br>
+            <button class="button-carrossel">Veja mais</button>
+          </div>
+        </div>
+        <div class="card swiper-slide">
+          <div class="image-content">
+            <span class="overlay"></span>
+
+            <div class="card-image">
+              <img src="img_leandro/Card-florianopolis.jpg" class="card-img" alt="Imagem da chapada dos veadeiros">
+            </div>
+          </div>
+          <div class="card-content">
+            <h2 class="name">Florianópolis - SC</h2>
+            <p class="description">Floripa não apenas tem belíssimas praias como também é um ótimo destino para o ecoturismo, tais como: passeios de escunas, trilhas, parques, mirantes e lagos.</p>
+            </p>
+            <button class="button-carrossel">Veja mais</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-button-next swiper-navBtn"></div>
+    <div class="swiper-button-prev swiper-navBtn"></div>
+    <div class="swiper-pagination"></div>
+
   </div>
+
+
+  <!-- <div class="container">
+
+    <div class="slide">
+
+
+      <div class="item" style="background-image: url(img_leandro/img_principal_2.jpg);">
+        <div class="content">
+          <div class="name">Chapada dos Veadeiros</div>
+          <div class="des">A Chapada dos Veadeiros é uma região de serras, situada no nordeste do estado de Goiás, Brasil. É uma região de ecoturismo, com cachoeiras, trilhas e piscinas naturais.</div>
+          <button>See More</button>
+        </div>
+      </div>
+      <div class="item" style="background-image: url(https://i.ibb.co/jrRb11q/img2.jpg);">
+        <div class="content">
+          <div class="name">Finland</div>
+          <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
+          <button>See More</button>
+        </div>
+      </div>
+      <div class="item" style="background-image: url(https://i.ibb.co/NSwVv8D/img3.jpg);">
+        <div class="content">
+          <div class="name">Iceland</div>
+          <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
+          <button>See More</button>
+        </div>
+      </div>
+      <div class="item" style="background-image: url(https://i.ibb.co/Bq4Q0M8/img4.jpg);">
+        <div class="content">
+          <div class="name">Australia</div>
+          <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
+          <button>See More</button>
+        </div>
+      </div>
+      <div class="item" style="background-image: url(https://i.ibb.co/jTQfmTq/img5.jpg);">
+        <div class="content">
+          <div class="name">Netherland</div>
+          <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
+          <button>See More</button>
+        </div>
+      </div>
+      <div class="item" style="background-image: url(https://i.ibb.co/RNkk6L0/img6.jpg);">
+        <div class="content">
+          <div class="name">Ireland</div>
+          <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
+          <button>See More</button>
+        </div>
+      </div>
+    </div>
+    <div class="button">
+      <button class="prev"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.
+          <path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z" />
+        </svg></button>
+      <button class="next"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.
+          <path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+        </svg></button>
+    </div>
+    <script src="slider.js"></script>
+  </div> -->
+
+
+
+  <div> <!-- tag de divisão dos serviços do site -->
+    <div>
+      <img class="img_icon" src="img_leandro/certificado_eco.png" alt="Selo certificado">
+      <span>Certificção Ecológica</span>
+      <p>Oferecemos destinos ecológicos com baixas emissoões de carbono. Se vocÇe encontrar uma opção mais sustentável em outrolugar, avise-nos</p>
+    </div>
+
+    <div>
+      <img class="img_icon" src="img_leandro/hotel_icon.png" alt="Selo hotel">
+      <h3>Hotéis Flexíveis</h3>
+      <p>Precisa viajar para um lugar ecológico e ficar em um hotel sustentável? Também possuímos essa ferramenta para a sua comodidade</p>
+    </div>
+
+    <div>
+      <img class="img_icon" src="img_leandro/ecologico_icon.png" alt="Selo se energia eólica">
+      <h3>Locais limpos e ecológicos</h3>
+      <p>Se você quer viajar para um local livre de poluição e com baixa emissão de carbono, nós temos a solução para você. Encontre os melhores destinos ecológicos do Brasil</p>
+    </div>
+  </div>
+
+
   <div> <!-- tag de divisão da calculadora de emissão de carbono -->
     <img class="img_carbono" src="img_leandro/emissão_carbono.jpg" alt="Imagem da industria emitindo gases carbonicos">
     <div id="texto_calc">
@@ -92,6 +305,11 @@
     </ul>
   </footer>
 </body>
+<!-- Swiper JS -->
+<script src="carroussel-css-js/swiper-bundle.min.js"></script>
+<!-- JavaScript -->
+<script src="carroussel.js"></script>
+
 
 
 </html>
