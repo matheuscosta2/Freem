@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --verde_paquistanes: #134611;
+    --india-verde:#3E8914;
+    --preto:#000000;
+    --luz-verde:#96E072;
+    --Nyanza: #E8Fccf;
+
+
+}
+.banner{
+    background-image: url(ecotour/img/lake-7390865_1280.jpg);
+    height: 500px;
+    width: 100%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background: cover;
+    background-size: cover;
+}
+.button_1{
+    position:absolute;
+    left: 70%;
+    top:20px;
+    appearance: none;
+    text-decoration: none;
+    font-size: 15px;
+    color: var(--verde_paquistanes);
+    border: #134611 solid 2px; 
+    border-radius: 30px;
+    height: 30px;
+    width: 300px;
+    align-items: center;
+    background-color: var(--Nyanza);
+ 
+ }
+ .titulos_1{
+    color: rgb(243, 242, 242);
+   
+    text-shadow: #134611 0 -3px;
+    font-size: 40px;
+    position: relative;
+    margin-left: 40px;
+    margin-top: 40px;
+     
+}
+.titulos{
+    color: #3E8914;
+    position: relative;
+    margin-left: 40%;
+    margin-top: 30px;
+    font-size: 30px;
+    margin-top: 70px;
+
+}
+.paragrafo_1{
+    color: white;
+    text-shadow: var(--verde_paquistanes) 0 -2px;
+    position: relative; 
+    top: 50px;
+    left: 40px;
+    font-size: 25px;
+    width: 600px;
+    
+}
+.paragrafo{
+    position: relative; 
+    left: 100px;
+    top: 20px;
+    font-size: 20px;
+    color: var(--verde_paquistanes);
+    width: 90%;
+}
+.img{
+    width: 60%;
+    height: 500px;    
+    position: relative;
+    left: 25%;
+    margin-top: 5%;
+    border-radius: 30px;
+    border: #3E8914 solid 4px;    
+}
+.cidade{
+    border: #134611 solid 2px;
+    margin-top: 60px;
+    width: 90%;
+    position: relative;
+    margin-left: 80px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    box-shadow: 5px 3px 3px black;
+
+    
+
+  
+}
+
+
+
+
+ 
