@@ -15,6 +15,22 @@ body {
   justify-content: center; /*coloquei isso para fazer o carrossel */
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
 /* body * {
   border: 1px solid red;
 } */
@@ -55,6 +71,22 @@ nav {
   opacity: 0.9;
   z-index: 1;
 }
+.button-login {
+  background-color: #2d6e07;
+  color: #e8fccf;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.button-login:hover {
+  background-color: #3e8914;
+  color: #e8fccf;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
 
 a:hover {
   color: #787676;
@@ -77,52 +109,51 @@ a:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   transition: all 0.5s ease;
 }
-
-#compara_titulo {
-  font-size: 30px;
-  text-align: center;
-}
-
-#compara_cidade {
-  padding: 20px;
+#box-calc {
+  background-image: url(img_leandro/fundo_calc_C02.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 10px;
   position: relative;
   display: inline-block;
   width: 70%;
-  height: 230px;
-  background-color: rgb(234, 234, 235);
-  border: 1px solid rgb(219, 219, 219);
   border-radius: 10px;
   margin: -100px;
+  box-shadow: 0 0 10px rgba(46, 124, 31, 0.5);
 }
-
-input {
-  border-radius: 10px;
-  border: 1px solid rgb(205, 205, 205);
-  padding: 8px;
-  margin: 8px;
-  background-color: rgb(234, 234, 235);
+#box-calc:hover {
+  transform: scale(1.05);
+  transition: all 0.5s ease;
 }
-
-.compara_botao {
+.button-calc {
   font-size: 18px;
   color: white;
   border-radius: 10px;
-  border: 1px solid rgb(255, 255, 255);
+  border: 1px solid #2d6e07;
   padding: 12px;
   margin: 8px;
   background-color: #2d6e07;
+  color: #e8fccf;
 }
-
-#destinos_pop {
-  display: flex;
-  justify-content: flex-start;
-  margin-left: 130px;
-  padding: 10px;
-  gap: 20px;
-  margin-right: 43px;
+.button-calc a {
+  color: #e8fccf;
 }
-
-#botao_dest_pop {
+.button-calc:hover {
+  background-color: #3e8914;
+}
+.destino_pop {
+  margin-top: 100px;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+.destino_pop,
+h2 {
+  font-size: 50px;
+  font-weight: bold;
+}
+#button-dest-pop {
   color: white;
   border-radius: 10px;
   border: 1px solid rgb(255, 255, 255);
@@ -130,142 +161,125 @@ input {
   margin: 18px;
   background-color: rgb(0, 0, 0);
 }
-
-.cor_botao {
-  font-weight: bold;
-  color: white;
+.slide-container {
+  max-width: 1120px;
+  width: 100%;
+  padding: 40px 0;
+  z-index: 0;
 }
-
-/* .img {
-  max-width: 80vh;
-  height: auto;
-} */
-
-/* .img {
-  width: 40vh;
-  height: 50vh;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  transition: all 0.5s ease;
-} */
-
-.carrossel {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  margin: 20px;
-}
-
-.carrossel {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  margin: 20px;
-}
-
-a {
-  text-decoration: none;
-  color: #000000;
-}
-
-ul,
-li {
-  list-style-type: none;
-}
-
-.botao_login1 {
-  background-color: #2d6e07;
-  color: #e8fccf;
-  padding: 10px 20px;
-  border-radius: 10px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.botao_login2 {
-  /* margin-left: 10px; coloquei isso pra ele ficar no canto 8 */
-  color: #000000;
-  padding: 10px 20px;
-  border-radius: 10px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-/* section {
-  text-align: center;
-} */
-
-.certificacao {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  padding: 30px;
-}
-.cont_certificacao {
-  gap: 20px;
-  margin: 30px;
-  padding: 30px;
-}
-.calc_carbono {
-  position: relative;
-}
-
-.img_carbono {
-  width: 1500px;
-  height: 500px;
-  border-radius: 10px;
-  opacity: 0.6;
-}
-
-#div_calc {
-  font-weight: bold;
-  border-radius: 5px;
-  color: #000000;
-  margin: 110px;
-  padding: 20px;
-  text-align: center;
-  position: absolute;
-  left: 30px;
-  right: 30px;
-  top: 15px;
-}
-.text_calc {
-  font-size: 20px;
-  font-weight: bold;
-  color: #000000;
-  margin: 10px;
+.slide-content {
   padding: 10px;
-  text-align: center;
-  opacity: 0.9;
+  margin: 0 40px;
+  overflow: hidden;
+  border-radius: 25px;
 }
-
-.botao_calc {
-  font-size: 20px;
-  background-color: #2d6e07;
-  color: #e8fccf;
-  padding: 20px 30px;
-  border-radius: 10px;
-  text-decoration: none;
+.card {
+  width: 320px;
+  border-radius: 25px;
+  background: #ffffff;
+}
+.image-content,
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+.image-content {
+  position: relative;
+  row-gap: 5px;
+  padding: 0 0;
+}
+.card-image {
+  /*card fica no centro */
+  position: relative;
+  height: 300px;
+  width: 300px;
+  padding: 3px;
+}
+.card-image .card-img {
+  /*imagem do card ficar no centro */
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10%;
+  border: 3px solid #004325;
+}
+.name {
+  /*nome do card ficar no centro */
+  font-size: 18px;
+  font-weight: 500;
+  color: #004325;
+}
+.description {
+  font-size: 14px;
+  color: #006035;
+  text-align: center;
+}
+.button-carrossel {
   font-weight: bold;
   border: none;
-}
-
-.botao_calc:hover {
+  font-size: 16px;
   color: #fff;
+  padding: 8px 16px;
   background-color: #3e8914;
+  border-radius: 6px;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button-carrossel:hover {
+  color: #fff;
+  background-color: #004325;
+}
+.button-carrossel a {
+  color: #fff;
+}
+.button-carrossel a:hover {
+  color: #fff;
+}
+.card:hover {
+  /*card do carrossel aumenta */
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+.swiper-navBtn {
+  /*botão do carrossel troca de cor */
+  color: #3e8914;
+  transition: color 0.3s ease;
+}
+.swiper-navBtn:hover {
+  color: #004325;
+}
+.swiper-button-next {
+  /*botão do carrossel fica no canto */
+  right: 0;
+}
+.swiper-button-prev {
+  /*botão do carrossel fica no canto */
+  left: 0;
+}
+.swiper-pagination-bullet {
+  /*botão do carrossel troca de cor */
+  background-color: #3e8914;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active {
+  /*botão do carrossel troca de cor */
+  background-color: #004325;
 }
 
-.cor_button_calc {
-  color: #e8fccf;
+.servico {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 30px;
 }
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.cont_servico {
+  gap: 20px;
+  margin-left: 70px;
+  padding: 30px;
 }
 
 .container-footer {
@@ -335,7 +349,6 @@ li {
   color: #24262b;
   background-color: #ffffff;
 }
-
 .copyright {
   margin-top: 10px;
   margin-bottom: -70px;
@@ -344,8 +357,18 @@ li {
   font-size: 14px;
   text-align: center;
 }
+/*responsivo*/
 
-/*responsive*/
+@media screen and (max-width: 600px) {
+  /*coloquei isso para fazer o carrossel ficar responsivo */
+  .slide-content {
+    margin: 0 10px;
+  }
+  .swiper-navBtn {
+    display: none;
+  }
+}
+
 @media (max-width: 767px) {
   .footer-col {
     width: 50%;
@@ -355,130 +378,5 @@ li {
 @media (max-width: 574px) {
   .footer-col {
     width: 100%;
-  }
-}
-
-.slide-container {
-  max-width: 1120px;
-  width: 100%;
-  padding: 40px 0;
-  z-index: 0;
-}
-.slide-content {
-  padding: 10px;
-  margin: 0 40px;
-  overflow: hidden;
-  border-radius: 25px;
-}
-.card {
-  width: 320px;
-  border-radius: 25px;
-  background: #ffffff;
-}
-
-.image-content,
-.card-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px 14px;
-}
-
-.image-content {
-  position: relative;
-  row-gap: 5px;
-  padding: 0 0;
-}
-
-.card-image {
-  /*coloquei isso para fazer o card ficar no centro */
-  position: relative;
-  height: 300px;
-  width: 300px;
-  padding: 3px;
-}
-
-.card-image .card-img {
-  /*coloquei isso para fazer a imagem do card ficar no centro */
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  border-radius: 10%;
-  border: 3px solid #004325;
-}
-
-.name {
-  /*coloquei isso para fazer o nome do card ficar no centro */
-  font-size: 18px;
-  font-weight: 500;
-  color: #004325;
-}
-
-.description {
-  font-size: 14px;
-  color: #006035;
-  text-align: center;
-}
-
-.button-carrossel {
-  border: none;
-  font-size: 16px;
-  color: #fff;
-  padding: 8px 16px;
-  background-color: #3e8914;
-  border-radius: 6px;
-  margin: 14px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.button-carrossel:hover {
-  /*coloquei isso para fazer o botão do carrossel trocar de cor */
-  background-color: #004325;
-}
-
-.card:hover {
-  /*coloquei isso para fazer o card do carrossel aumentar */
-  transform: scale(1.05);
-  transition: all 0.3s ease;
-}
-
-.swiper-navBtn {
-  /*coloquei isso para fazer o botão do carrossel trocar de cor */
-  color: #3e8914;
-  transition: color 0.3s ease;
-}
-
-.swiper-navBtn:hover {
-  /*coloquei isso para fazer o botão do carrossel trocar de cor */
-  color: #004325;
-}
-
-.swiper-button-next {
-  /*coloquei isso para fazer o botão do carrossel ficar no canto */
-  right: 0;
-}
-
-.swiper-button-prev {
-  /*coloquei isso para fazer o botão do carrossel ficar no canto */
-  left: 0;
-}
-.swiper-pagination-bullet {
-  /*coloquei isso para fazer o botão do carrossel trocar de cor */
-  background-color: #3e8914;
-  opacity: 1;
-}
-.swiper-pagination-bullet-active {
-  /*coloquei isso para fazer o botão do carrossel trocar de cor */
-  background-color: #004325;
-}
-
-@media screen and (max-width: 600px) {
-  /*coloquei isso para fazer o carrossel ficar responsivo */
-  .slide-content {
-    margin: 0 10px;
-  }
-  .swiper-navBtn {
-    display: none;
   }
 }
