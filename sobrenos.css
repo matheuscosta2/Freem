@@ -1,73 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Josefin+Sans&family=Lobster&display=swap");
-
-/* Reset básico para garantir consistência entre navegadores */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  line-height: 2.5;
+  
 }
 
 /* Estilos gerais */
-body {
-  font-family: "Archivo Black", sans-serif;
-  line-height: 1.6;
-}
 
-ul li {
-  list-style-type: none;
+.box-sobre {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  line-height: 2.5;
 }
-
-nav ul li {
-  display: inline;
-  margin-right: 20px;
-}
-
-nav ul li a {
-  color: black;
-  text-decoration: none;
-}
-
-nav ul li a.active {
-  font-weight: bold;
-}
-
-main {
-  padding: 20px;
-}
-
-.about {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-footer {
-  text-align: center;
-  padding: 1rem;
-  background-color: #333;
-  color: #fff;
-}
-
-.logo_freem {
-  max-width: 70px;
-}
-.logo_menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 30px;
-}
-
-nav {
-  padding: 10px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 30px;
-}
-
-.lista_menu {
-  display: flex;
-  gap: 3rem;
-  margin-right: 9.5rem;
+header {
+  height: 4.5rem;
 }

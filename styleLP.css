@@ -71,6 +71,9 @@ nav {
   opacity: 0.9;
   z-index: 1;
 }
+.btn-mobile {
+  display: none;
+}
 .button-login {
   background-color: #2d6e07;
   color: #e8fccf;
@@ -379,4 +382,21 @@ h2 {
   .footer-col {
     width: 100%;
   }
+}
+
+@media(max-width: 768px) {
+  .lista_menu {
+    display: none;
+  }
+  .btn-mobile {
+    display: block;
+    cursor: pointer;
+  }
+  .btn-mobile img {
+    width: 40px;
+  }
+  .lista_menu {
+    display: none;
+  }
+  
 }

@@ -73,3 +73,16 @@
   transform: scale(1.05);
   background-color: #089533;
 }
+.btn-cadastro {
+  background-color: #e2e2e2;
+  color: #000000;
+  font-size: 14px;
+  font-weight: 600;
+  border: none !important;
+  transition: all linear 160ms;
+  cursor: pointer;
+}
+.btn-cadastro:hover {
+  transform: scale(1.05);
+  background-color: #acacac;
+}
