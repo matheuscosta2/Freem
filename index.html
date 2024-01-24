@@ -13,32 +13,42 @@
 
 <body>
   <header>
-    <nav class="nav_menu">
-      <div class="logo_menu"><img class="logo_freem" src="img_leandro/FREEMLogo.png" alt="Logotipo">
+    <nav class="nav-menu">
+      <div class="logo_menu"><img class="logo-freem" src="img_leandro/FREEMLogo.png" alt="Logotipo">
         <h1>Freem</h1>
       </div>
-      <button id="btn-mobile">Menu</button>
       <ul class="lista_menu">
-        <li><a href="/">Encontre Hotéis Eco</a></li>
-        <li><a href="/">Calculadora de CO²</a></li>
-        <li><a href="/">Notícias</a></li>
-        <li><a href="/">Avaliações</a></li>
-        <li><a href="/">Login</a></li>
-        <li> <a href="/" class="button-login">Cadastrar</a></li>
+        <li class="nav-item"><a href="/">Encontre Hotéis Eco</a></li>
+        <li class="nav-item"><a href="/">Calculadora de CO²</a></li>
+        <li class="nav-item"><a href="/">Notícias</a></li>
+        <li class="nav-item"><a href="/">Avaliações</a></li>
+        <li class="login-button"><a href="tela_login.html">Login</a></li>
+        <li class="login-button"> <a href="/" class="button-login">Cadastrar</a></li>
       </ul>
+      <div class="mobile-menu-icon">
+        <button onclick="menuShow()"><img class="icon" src="img_leandro/menu_white_36dp.svg" alt=""></button>
+      </div>
+        <div class="mobile-menu">
+          <ul>
+            <li class="nav-item"><a href="#" class="nav-link">Calculadora de CO²</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Hotéis Eco</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Login</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Cadastrar</a></li>
+          </ul>
+        </div>
     </nav>
   </header>
   <div>
     <img class="img_principal" src="img_leandro/jalapon-4289632.jpg" alt="Imagem arvore">
   </div>
   <div id="box-calc"><!-- tag de divisão do botão flutuante de comparação das cidades -->
-    <h1 id="titulo_calc">Calculadora de carbono</h1><br>
-    <p>A calculadora de pegada de carbono é uma ferramenta inovadora que permite a você quantificar a quantidade de gases de efeito estufa que são emitidos como resultado de suas ações cotidianas.
+    <h1 id="titulo-calc">Calculadora de carbono</h1><br>
+    <p class="text-calc">A calculadora de pegada de carbono é uma ferramenta inovadora que permite a você quantificar a quantidade de gases de efeito estufa que são emitidos como resultado de suas ações cotidianas.
       Utilize a calculadora para determinar a pegada de carbono associada à sua jornada sustentável.</p><br>
     <button class="button-calc"><a href="/">Calcular</a></button>
   </div>
   <div> <!-- tag de divisão dos destinos populares -->
-    <div class="destino_pop">
+    <div class="destino-pop">
       <h2>Destinos populares</h2>
     </div>
     <p>Aqui você encontra as cidades mais sustentáveis e com a menor emissão de carbono do Brasil</p>
@@ -178,20 +188,20 @@
     <div class="swiper-pagination"></div>
   </div>
   <div class="servico"> <!-- tag de divisão dos serviços do site -->
-    <div class="cont_servico">
-      <img class="img_icon" src="img_leandro/certificado_eco.png" alt="Selo certificado">
+    <div class="cont-servico">
+      <img class="img-servico" src="img_leandro/certificado_eco.png" alt="Selo certificado">
       <h3>Certificação Ecológica</h3>
-      <p>Oferecemos destinos ecológicos com baixas emissoões de carbono. Se vocÇe encontrar uma opção mais sustentável em outrolugar, avise-nos</p>
+      <p class="text-servico">Oferecemos destinos ecológicos com baixas emissoões de carbono. Se vocÇe encontrar uma opção mais sustentável em outrolugar, avise-nos</p>
     </div>
-    <div class="cont_servico">
-      <img class="img_icon" src="img_leandro/hotel_icon.png" alt="Selo hotel">
+    <div class="cont-servico">
+      <img class="img-servico" src="img_leandro/hotel_icon.png" alt="Selo hotel">
       <h3>Hotéis Flexíveis</h3>
-      <p>Precisa viajar para um lugar ecológico e ficar em um hotel sustentável? Também possuímos essa ferramenta para a sua comodidade</p>
+      <p class="text-servico">Precisa viajar para um lugar ecológico e ficar em um hotel sustentável? Também possuímos essa ferramenta para a sua comodidade</p>
     </div>
-    <div class="cont_servico">
-      <img class="img_icon" src="img_leandro/ecologico_icon.png" alt="Selo se energia eólica">
+    <div class="cont-servico">
+      <img class="img-servico" src="img_leandro/ecologico_icon.png" alt="Selo se energia eólica">
       <h3>Locais limpos e ecológicos</h3>
-      <p>Se você quer viajar para um local livre de poluição e com baixa emissão de carbono, nós temos a solução para você. Encontre os melhores destinos ecológicos do Brasil</p>
+      <p class="text-servico">Se você quer viajar para um local livre de poluição e com baixa emissão de carbono, nós temos a solução para você. Encontre os melhores destinos ecológicos do Brasil</p>
     </div>
   </div>
   <footer class="footer">
@@ -241,10 +251,12 @@
       </div>
     </div>
   </footer>
+  <script src="nav-menu.js"></script>
+  <!-- Swiper JS -->
+  <script src="carroussel-css-js/swiper-bundle.min.js"></script>
+  <!-- JavaScript -->
+  <script src="carroussel-css-js/carroussel.js"></script>
+
 </body>
-<!-- Swiper JS -->
-<script src="carroussel-css-js/swiper-bundle.min.js"></script>
-<!-- JavaScript -->
-<script src="carroussel-css-js/carroussel.js"></script>
 
 </html>
