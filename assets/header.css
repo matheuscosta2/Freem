@@ -33,6 +33,14 @@
     width: 40px;
 }
 
+.container_imagem_logo{ 
+    width: 80px;
+}
+
+.container__titulo--negrito{
+    color: var(--verde);
+}
+
 .lista-menu {
     display: none;
     position: absolute;
@@ -58,7 +66,7 @@
 }
 
 .lista-menu__link {
-    background: var(--verde);
+    background: var(--preto);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -87,6 +95,7 @@
     .container__titulo--negrito {
         font-family: var(--fonte-secundaria);
         font-size: 30px;
+       
     }
 
 

@@ -1,4 +1,4 @@
-
+// srcript responsãvel pelo carrossel
 const swiper = new Swiper('.swiper', {
     spaceBetween: 10,
     slidesPerView: 3,
@@ -8,3 +8,11 @@ const swiper = new Swiper('.swiper', {
     }
 });
 
+// Tópicos
+
+let topicosLista = document.querySelector(".tópicos__lista")
+console.log(topicosLista)
+topicosLista.addEventListener("click", ()=>{
+    console.log("passou o mouse por cima")
+     
+})
