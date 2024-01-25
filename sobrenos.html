@@ -12,18 +12,29 @@
 
 <body>
   <header>
-    <nav class="nav_menu">
-      <div class="logo_menu"><img class="logo_freem" src="img_leandro/FREEMLogo.png" alt="Logotipo">
+    <nav class="nav-menu">
+      <div class="logo_menu"><img class="logo-freem" src="img_leandro/FREEMLogo.png" alt="Logotipo">
         <h1>Freem</h1>
       </div>
       <ul class="lista_menu">
-        <li><a href="/">Encontre Hotéis Eco</a></li>
-        <li><a href="/">Calculadora de CO²</a></li>
-        <li><a href="/">Notícias</a></li>
-        <li><a href="/">Avaliações</a></li>
-        <li><a href="/">Login</a></li>
-        <li> <a href="/" class="button-login">Cadastrar</a></li>
+        <li class="nav-item"><a href="/">Encontre Hotéis Eco</a></li>
+        <li class="nav-item"><a href="/">Calculadora de CO²</a></li>
+        <li class="nav-item"><a href="/">Notícias</a></li>
+        <li class="nav-item"><a href="/">Avaliações</a></li>
+        <li class="login-button"><a href="tela_login.html">Login</a></li>
+        <li class="login-button"> <a href="/" class="button-login">Cadastrar</a></li>
       </ul>
+      <div class="mobile-menu-icon">
+        <button onclick="menuShow()"><img class="icon" src="img_leandro/menu_white_36dp.svg" alt=""></button>
+      </div>
+      <div class="mobile-menu">
+        <ul>
+          <li class="nav-item"><a href="#" class="nav-link">Calculadora de CO²</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Hotéis Eco</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Login</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Cadastrar</a></li>
+        </ul>
+      </div>
     </nav>
   </header>
   <div class="box-sobre">
@@ -93,6 +104,7 @@
       </div>
     </div>
   </footer>
+  <script src="nav-menu.js"></script>
 </body>
 
 </html>
