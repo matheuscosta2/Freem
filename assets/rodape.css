@@ -3,17 +3,35 @@ hr{
 }
 
 .rodapé{
-    background-color: var( --cor-de-fundo);
+    background-color: var( --fundo-footer);
     padding: 1em;
+    
     
 }
 
-@media screen and (max-width: 1080px) {
+.rodapé__titulo{
+    color: var(--branco);
+    text-align: center;
+}
+
+.rodapé-copy{
+    background-color: var(--fundo-footer);
+}
+
+@media screen and (min-width: 1080px) {
     .rodapé__titulo{
-        font-size: 30px;
-        font-weight: bold;
+        font-size: 20px;
+       
         text-align: center;
-        color: var(--verde);
+        color: var(--branco);
+    }
+
+    .lista-rodapé__titulo{
+        margin-bottom: 2em;
+    }
+
+    .lista-rodapé__link{
+        margin-bottom: 10px;
     }
 }
 
@@ -38,18 +56,24 @@ hr{
     }
 
     .lista-rodapé__link{
-        color: var(--cinza);
+        color: var(--branco);
         text-decoration: none;
         margin-left: 0.6em;  
     }
 
     .lista-rodapé__titulo{
-        font-size: 14px;
-        color: var(--cinza-claro);
+        font-size: 20px;
+        color: var(--branco);
+        margin-bottom: 2em;
+        
     }
 
     .rodapé__titulo{
-        font-size: 24px;
+        font-size: 15px;   
+    }
+
+    .rodapé-copy{
+        text-align: center;
     }
 }
 
