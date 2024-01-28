@@ -16,7 +16,7 @@
 }
 
 .cabeçalho {
-    background-color: #E3E3E3;
+    background-color: rgb(225, 225, 225);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -38,7 +38,7 @@
 }
 
 .container__titulo--negrito{
-    color: var(--verde-claro);
+    color:#3E8914;
 }
 
 .lista-menu {
@@ -56,7 +56,7 @@
 .lista-menu__titulo,
 .lista-menu__item {
     padding: 1em;
-    background-color: #E3E3E3;
+    background-color:  rgb(225, 225, 225);
 
 }
 
@@ -160,6 +160,16 @@
     }
 }
 
+@media screen and (min-width: 1080px){
+    .container__imagem{
+        display: none;
+    }
+   
+    .container__opçóes{
+        justify-content: space-evenly;
+    }
+}
+
 @media screen and (min-width: 1728px) {
     .container__link {
         display: flex;
@@ -179,5 +189,8 @@
 
     .container__texto {
         display: block;
+    }
+    .container__imagem{
+        display: none;
     }
 }

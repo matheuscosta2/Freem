@@ -30,6 +30,7 @@
 }
 
 .slider-descrição{
+    font-size: 13px;
     margin-top: 0.5em;
     color: var(--verde);
 }
@@ -159,12 +160,20 @@
         margin-left: 60px;
         padding: 1 0.5em;
     }
+
+    .slider-descrição{
+        font-size: 18px;
+    }
 }
 
 @media screen and (min-width: 1080px) {
     .slider-botão{
         margin-left: 35px;
         padding: 1 1.5em;
+    }
+
+    .slider-descrição{
+        font-size: 16px;
     }
 }
 
