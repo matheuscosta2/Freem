@@ -15,3 +15,15 @@
 header {
   height: 4.5rem;
 }
+.box-sobre .titulo h2 {
+  margin-top: 10px;
+  font-size: 30px;
+  margin-bottom: 1rem;
+  line-height: 2.5;
+}
+
+.about h2{
+  font-size: 30px;
+  margin-bottom: 1rem;
+  line-height: 2.5;
+}

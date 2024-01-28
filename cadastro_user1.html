@@ -5,56 +5,114 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cadastro</title>
-  <link rel="stylesheet" href="cadastro_css1.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="leand-css/styleLP.css">
+  <link rel="stylesheet" href="leand-css/cadastro_css1.css">
 </head>
 
 <body>
-  <nav class="nav_menu">
-    <div class="logo_menu"><img class="logo_freem" src="img_leandro/FREEMLogo.png" alt="Logotipo">
-      <h1>Freem</h1>
+  <header>
+    <nav class="nav-menu">
+      <div class="logo-menu"><img class="logo-freem" src="img_leandro/FREEMLogo.png" alt="Logotipo">
+        <h1>Freem</h1>
+      </div>
+      <ul class="lista-menu">
+        <li class="nav-item"><a href="/">Encontre Hotéis Eco</a></li>
+        <li class="nav-item"><a href="/">Calculadora de CO²</a></li>
+        <li class="nav-item"><a href="/">Notícias</a></li>
+        <li class="nav-item"><a href="/">Avaliações</a></li>
+        <li class="login-button"><a href="tela_login.html">Login</a></li>
+        <li class="login-button"> <a href="/" class="button-login">Cadastrar</a></li>
+      </ul>
+      <div class="mobile-menu-icon">
+        <button onclick="menuShow()"><img class="icon" src="img_leandro/menu_white_36dp.svg" alt=""></button>
+      </div>
+      <div class="mobile-menu">
+        <ul>
+          <li class="nav-item"><a href="#" class="nav-link">Calculadora de CO²</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Hotéis Eco</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Login</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Cadastrar</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <form action="">
+    <h2>Cadastro Freem</h2>
+    <label for="username">*Nome Completo:</label>
+    <input type="text" id="username" name="username" class="">
+    <p id="username-helper" class="helper-text">Mensagem de ajuda</p>
+
+    <label for="username">*Username:</label>
+    <input type="text" id="username" name="username" class="">
+    <p id="username-helper" class="helper-text">Mensagem de ajuda</p>
+
+    <label for="email">*E-mail:</label>
+    <input type="email" id="email" name="email" class="">
+    <p id="email-helper" class="">Mensagem de ajuda</p>
+
+    <label for="idade" class="">Idade:</label>
+    <input type="number" id="idade" name="idade">
+    <p id="idade-helper" class="helper-text">Mensagem de ajuda</p>
+
+    <label for="senha">*Senha:</label>
+    <input type="password" id="senha" name="senha">
+    <p id="senha-helper" class="helper-text">Mensagem de ajuda</p>
+
+    <label for="confirma-senha">*Confirmar senha:</label>
+    <input type="password" id="confirma-senha" name="confirma-senha">
+    <p id="confirma-senha-helper" class="helper-text">Mensagem de ajuda</p>
+
+    <button type="submit"><a href="">Enviar</a></button>
+  </form>
+
+  <footer class="footer">
+    <div class="container-footer">
+      <div class="row">
+        <div class="footer-col">
+          <h4>quem somos</h4>
+          <ul>
+            <li><a href="sobrenos.html">sobre nós</a></li>
+            <li><a href="#">nossos serviços</a></li>
+            <li><a href="#">política de privacidade</a></li>
+            <li><a href="#">nos avalie</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>nossos serviços</h4>
+          <ul>
+            <li><a href="#">calculadora de carbono</a></li>
+            <li><a href="#">escolha seu destino</a></li>
+            <li><a href="#">hotéis</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Fale conosco</h4>
+          <ul>
+            <li><a href="#">Atendimento ao cliente</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>redes sociais</h4>
+          <div class="social-links">
+            <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Freem Ecoturismo © 2024 </p>
+      </div>
     </div>
-    <ul class="lista_menu">
-      <li><a href="/">Encontre Hotéis Eco</a></li>
-      <li> <a href="/" class="botao_login1">Cadastrar</a></li>
-      <li><a href="/" class="botao_login2">Login</a></li>
-    </ul>
-  </nav>
-  <main>
-
-    <form action="http://formmail.kinghost.net/formmail.cgi" method="POST">
-      <input type="hidden" name="recipient" value="testeiseuemail@gmail.com"> <!-- Pode ser qualquer endereço de email -->
-      <input type="hidden" name="redirect" value="http://seudominio"> <!-- Após o envio, o usuário será redirecionado para a página configurada aqui -->
-      <input type="hidden" name="subject" value="teste de assunto"> <!-- Assunto da mensagem -->
-      <input type="hidden" name="email" value="email@doseudominio"> <!-- Deve ser uma conta de email ativa em seu domínio -->
-
-      <p>
-        Nome:<br />
-        <input type="text" size="30" name="nome" placeholder="Insira seu nome completo" required>
-      </p>
-
-      <p>
-        E-mail:<br />
-        <input type="text" size="30" name="email" placeholder="Insira seu Email" required>
-      </p>
-
-      <p>
-        Telefone:<br />
-        <input type="tel" size="35" name="Telefone" placeholder="Insira seu Telefone">
-      </p>
-
-      <p>
-        Senha:<br />
-        <input type="password" placeholder="Insira a Senha" name="psw" required>
-      </p>
-      <p>
-        <input type="submit" name="BTEnvia" value="Enviar">
-        <input type="reset" name="BTApaga" value="Apagar">
-      </p>
-    </form>
-  </main><br><br><br><br><br><br>
-  <footer>
-    <p>&copy; 2023 FREEM. Todos os direitos reservados.</p>
   </footer>
+  <script src="leand-js/valida-formulario.js"></script>
+  <!-- Responsivo Header -->
+  <script src="leand-js/nav-menu.js"></script>
 </body>
 
 </html>

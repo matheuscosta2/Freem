@@ -3,7 +3,6 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  /* font-family: "archivo black", sans-serif; */
   font-family: "poppins", sans-serif;
   text-align: center; /*coloquei isso para a imagem principal ficar no centro */
   background-color: #f5f5f5;
@@ -42,7 +41,7 @@ li {
 .logo-freem {
   max-width: 70px;
 }
-.logo_menu {
+.logo-menu {
   color: #3e8914;
   display: flex;
   justify-content: space-between;
@@ -99,7 +98,7 @@ a:hover {
   color: #787676;
 }
 
-.lista_menu {
+.lista-menu {
   display: flex;
   gap: 3rem;
   margin-right: 3rem;
@@ -116,7 +115,7 @@ a:hover {
   transition: all 0.5s ease;
 }
 #box-calc {
-  background-image: url(img_leandro/fundo_calc_C02.png);
+  background-image: url(/ecotour/img_leandro/fundo_calc_C02.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
