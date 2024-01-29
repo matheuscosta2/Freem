@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Josefin+Sans&family=Lobster&family=Poppins&display=swap");
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: smooth; /*isso serve para  */
 }
 body {
   font-family: "poppins", sans-serif;
@@ -50,6 +50,15 @@ li {
   /* margin-left: 3rem; */
 }
 
+.logo-menu a {
+  text-decoration: none;
+  color: #2d6e07;
+}
+.logo-menu a:hover {
+  transform: scale(1.06);
+  transition: all 0.2s ease;
+  color: #3e8914;
+}
 /* .icon_cabecalho {
   max-width: 1.5rem;
 margin-right: -15px;
@@ -73,6 +82,16 @@ nav {
   box-shadow: 0 0 20px #f5f5f5;
   opacity: 0.9;
   z-index: 1;
+}
+
+.nav-item:hover {
+  transform: scale(1.06);
+  transition: all 0.2s ease;
+}
+
+.login-button:hover {
+  transform: scale(1.06);
+  transition: all 0.2s ease;
 }
 .btn-mobile {
   display: none;
@@ -165,6 +184,9 @@ h2 {
   padding: 8px;
   margin: 18px;
   background-color: rgb(0, 0, 0);
+}
+.titulo-mobile-carrousel {
+  display: none;
 }
 .slide-container {
   max-width: 1120px;
@@ -280,6 +302,10 @@ h2 {
   align-items: center;
   padding: 30px;
 }
+.titulo-servico {
+  font-size: 50px;
+  font-weight: bold;
+}
 .cont-servico {
   gap: 20px;
   justify-content: center;
@@ -373,6 +399,11 @@ h2 {
   .swiper-navBtn {
     display: none;
   }
+  .titulo-mobile-carrousel {
+    display: block;
+    font-size: 25px;
+    font-weight: bold;
+  }
 }
 
 @media (max-width: 767px) {
@@ -412,6 +443,9 @@ h2 {
   }
   .logo-freem {
     display: none;
+  }
+  .titulo-servico {
+    font-size: 30px;
   }
 }
 

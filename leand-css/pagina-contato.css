@@ -64,14 +64,24 @@ body {
   cursor: pointer;
   transition: all 0.3s ease;
 }
-
+.field:hover {
+  transform: scale(1.01);
+  transition: all 0.3s ease;
+}
+.btn:hover {
+  transform: scale(1.03);
+  transition: all 0.3s ease;
+}
 @media screen and (max-width: 850px) {
   .contact-box {
     width: 50%;
+    flex-direction: column;
+    padding: 20px;
+    
   }
 
   .container-contato {
-    width: 500px;
-    margin-left: -30px;
+    width: 100%;
+    flex-direction: row;
   }
 }

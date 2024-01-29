@@ -14,15 +14,15 @@
   <header>
     <nav class="nav-menu">
       <div class="logo-menu"><img class="logo-freem" src="img_leandro/FREEMLogo.png" alt="Logotipo">
-        <h1>Freem</h1>
+        <h1><a href="index.html">Freem</a></h1>
       </div>
       <ul class="lista-menu">
         <li class="nav-item"><a href="/">Encontre Hotéis Eco</a></li>
         <li class="nav-item"><a href="/">Calculadora de CO²</a></li>
         <li class="nav-item"><a href="/">Notícias</a></li>
-        <li class="nav-item"><a href="/">Avaliações</a></li>
+        <!-- <li class="nav-item"><a href="/">Avaliações</a></li> -->
         <li class="login-button"><a href="tela_login.html">Login</a></li>
-        <li class="login-button"> <a href="/" class="button-login">Cadastrar</a></li>
+        <li class="login-button"> <a href="cadastro_user1.html" class="button-login">Cadastrar</a></li>
       </ul>
       <div class="mobile-menu-icon">
         <button onclick="menuShow()"><img class="icon" src="img_leandro/menu_white_36dp.svg" alt=""></button>
@@ -41,30 +41,30 @@
   <form action="">
     <h2>Cadastro Freem</h2>
     <label for="username">*Nome Completo:</label>
-    <input type="text" id="username" name="username" class="">
+    <input type="text" id="username" name="username" class="box-input">
     <p id="username-helper" class="helper-text">Mensagem de ajuda</p>
 
     <label for="username">*Username:</label>
-    <input type="text" id="username" name="username" class="">
+    <input type="text" id="username" name="username" class="box-input">
     <p id="username-helper" class="helper-text">Mensagem de ajuda</p>
 
     <label for="email">*E-mail:</label>
-    <input type="email" id="email" name="email" class="">
+    <input type="email" id="email" name="email" class="box-input">
     <p id="email-helper" class="">Mensagem de ajuda</p>
 
     <label for="idade" class="">Idade:</label>
-    <input type="number" id="idade" name="idade">
+    <input type="number" id="idade" name="idade" class="box-input">
     <p id="idade-helper" class="helper-text">Mensagem de ajuda</p>
 
     <label for="senha">*Senha:</label>
-    <input type="password" id="senha" name="senha">
+    <input type="password" id="senha" name="senha" class="box-input">
     <p id="senha-helper" class="helper-text">Mensagem de ajuda</p>
 
     <label for="confirma-senha">*Confirmar senha:</label>
-    <input type="password" id="confirma-senha" name="confirma-senha">
+    <input type="password" id="confirma-senha" name="confirma-senha" class="box-input">
     <p id="confirma-senha-helper" class="helper-text">Mensagem de ajuda</p>
 
-    <button type="submit"><a href="">Enviar</a></button>
+    <button type="submit" class="btn-cadastro"><a href="">Enviar</a></button>
   </form>
 
   <footer class="footer">

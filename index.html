@@ -7,6 +7,7 @@
   <title>Freem</title>
   <!-- Swiper CSS -->
   <link rel="stylesheet" href="carroussel-css-js/swiper-bundle.min.css" />
+  <!-- Galeria de Icones -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
   <link rel="stylesheet" href="leand-css/styleLP.css">
 </head>
@@ -15,15 +16,15 @@
   <header>
     <nav class="nav-menu">
       <div class="logo-menu"><img class="logo-freem" src="img_leandro/FREEMLogo.png" alt="Logotipo">
-        <h1>Freem</h1>
+        <h1><a href="index.html">Freem</a></h1>
       </div>
       <ul class="lista-menu">
         <li class="nav-item"><a href="/">Encontre Hotéis Eco</a></li>
         <li class="nav-item"><a href="/">Calculadora de CO²</a></li>
         <li class="nav-item"><a href="/">Notícias</a></li>
-        <li class="nav-item"><a href="/">Avaliações</a></li>
+        <!-- <li class="nav-item"><a href="/">Avaliações</a></li> -->
         <li class="login-button"><a href="tela_login.html">Login</a></li>
-        <li class="login-button"> <a href="/" class="button-login">Cadastrar</a></li>
+        <li class="login-button"> <a href="cadastro_user1.html" class="button-login">Cadastrar</a></li>
       </ul>
       <div class="mobile-menu-icon">
         <button onclick="menuShow()"><img class="icon" src="img_leandro/menu_white_36dp.svg" alt=""></button>
@@ -44,14 +45,15 @@
   <div id="box-calc"><!-- tag de divisão do botão flutuante de comparação das cidades -->
     <h1 id="titulo-calc">Calculadora de carbono</h1><br>
     <p class="text-calc">A calculadora de pegada de carbono é uma ferramenta inovadora que permite a você quantificar a quantidade de gases de efeito estufa que são emitidos como resultado de suas ações cotidianas.
-      Utilize a calculadora para determinar a pegada de carbono associada à sua jornada sustentável.</p><br>
+      Utilize a nossa calculadora para determinar a pegada de carbono associada à sua jornada sustentável.</p><br>
     <button class="button-calc"><a href="/">Calcular</a></button>
   </div>
   <div> <!-- tag de divisão dos destinos populares -->
     <div class="destino-pop">
       <h2>Destinos populares</h2>
     </div>
-    <p>Aqui você encontra as cidades mais sustentáveis e com a menor emissão de carbono do Brasil</p>
+    <p>Aqui você encontra as cidades mais sustentáveis e com a menor emissão de carbono do Brasil</p><br>
+    <p class="titulo-mobile-carrousel">Arraste para o lado</p>
   </div>
   <div class="slide-container swiper">
     <div class="slide-content">
@@ -187,20 +189,24 @@
     <div class="swiper-button-prev swiper-navBtn"></div>
     <div class="swiper-pagination"></div>
   </div>
+  <div>
+    <h2 class="titulo-servico">Nossos serviços</h2>
+    <p>A missão da Freem é proporcionar destinos turísticos no Brasil com as emissões de carbono mais reduzidas.</p>
+  </div>
   <div class="servico"> <!-- tag de divisão dos serviços do site -->
     <div class="cont-servico">
       <img class="img-servico" src="img_leandro/certificado_eco.png" alt="Selo certificado">
-      <h3>Certificação Ecológica</h3>
-      <p class="text-servico">Oferecemos destinos ecológicos com baixas emissões de carbono. Se você encontrar uma opção mais sustentável em outro lugar, avise-nos</p>
+      <h3>Certificação ecológica</h3>
+      <p class="text-servico">Selecionamos os destinos ecológicos com as menores emissões de carbono. Caso encontre uma opção mais sustentável em outro lugar, avise-nos</p>
     </div>
     <div class="cont-servico">
       <img class="img-servico" src="img_leandro/hotel_icon.png" alt="Selo hotel">
-      <h3>Hotéis Flexíveis</h3>
+      <h3>Hotéis flexíveis</h3>
       <p class="text-servico">Precisa viajar para um lugar ecológico e ficar em um hotel sustentável? Também possuímos essa ferramenta para a sua comodidade</p>
     </div>
     <div class="cont-servico">
       <img class="img-servico" src="img_leandro/ecologico_icon.png" alt="Selo se energia eólica">
-      <h3>Locais limpos e ecológicos</h3>
+      <h3>Calculadora de carbono</h3>
       <p class="text-servico">Se você quer viajar para um local livre de poluição e com baixa emissão de carbono, nós temos a solução para você. Encontre os melhores destinos ecológicos do Brasil</p>
     </div>
   </div>
