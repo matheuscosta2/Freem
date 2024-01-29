@@ -1,85 +1,265 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styleLP.css">
   <title>Freem</title>
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="carroussel-css-js/swiper-bundle.min.css" />
+  <!-- Galeria de Icones -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="leand-css/styleLP.css">
 </head>
 
 <body>
-  <main>
-    <header> <!-- talvez colocar a tag sidebar -->
-      <span class="marca_dagua" href="/">Freem</span>
-      <nav class="menu">
+  <header>
+    <nav class="nav-menu">
+      <div class="logo-menu"><img class="logo-freem" src="img_leandro/FREEMLogo.png" alt="Logotipo">
+        <h1><a href="index.html">Freem</a></h1>
+      </div>
+      <ul class="lista-menu">
+        <li class="nav-item"><a href="/">Encontre Hotéis Eco</a></li>
+        <li class="nav-item"><a href="/">Calculadora de CO²</a></li>
+        <li class="nav-item"><a href="/">Notícias</a></li>
+        <!-- <li class="nav-item"><a href="/">Avaliações</a></li> -->
+        <li class="login-button"><a href="tela_login.html">Login</a></li>
+        <li class="login-button"> <a href="cadastro_user1.html" class="button-login">Cadastrar</a></li>
+      </ul>
+      <div class="mobile-menu-icon">
+        <button onclick="menuShow()"><img class="icon" src="img_leandro/menu_white_36dp.svg" alt=""></button>
+      </div>
+      <div class="mobile-menu">
         <ul>
-          <li><a href="hoteis.html">Encontre Hotéis Eco</a></li>
-          <li> <a href="cadastro_user.html" class="botao_login1">Inscrever-se</a></li>
-          <li><a href="tela_login.html" class="botao_login2">Conecte-se</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Calculadora de CO²</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Hotéis Eco</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Login</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Cadastrar</a></li>
         </ul>
-      </nav>
-    </header>
-    <div>
-      <img class="img_principal" src="img_leandro/arvore_landing_page.jpg" alt="Imagem arvore">
-    </div>
-    <section><!-- tag de divisão do botão flutuante de comparação das cidades -->
-      <h1 class="titulo">Descubra destinos ecológicos</h1>
-      <p>Comparador de emissão de CO² entre cidades</p>
-      <b>Cidade A</b>
-      <input type="text" name="cidadeA" id="cidadeA">
-      <b>Cidade B</b>
-      <input type="text" name="cidadeB" id="cidadeB">
-      <button><a href="comparador_cidades.html">Comparar</a></button>
-    </section>
-    <div> <!-- tag de divisão dos destinos populares -->
+      </div>
+    </nav>
+  </header>
+  <div>
+    <img class="img_principal" src="img_leandro/jalapon-4289632.jpg" alt="Imagem arvore">
+  </div>
+  <div id="box-calc"><!-- tag de divisão do botão flutuante de comparação das cidades -->
+    <h1 id="titulo-calc">Calculadora de carbono</h1><br>
+    <p class="text-calc">A calculadora de pegada de carbono é uma ferramenta inovadora que permite a você quantificar a quantidade de gases de efeito estufa que são emitidos como resultado de suas ações cotidianas.
+      Utilize a nossa calculadora para determinar a pegada de carbono associada à sua jornada sustentável.</p><br>
+    <button class="button-calc"><a href="/">Calcular</a></button>
+  </div>
+  <div> <!-- tag de divisão dos destinos populares -->
+    <div class="destino-pop">
       <h2>Destinos populares</h2>
-      <button><a href="melhores_cidades.html">Acesse aqui</a></button>
-      <p>Aqui você encontra as cidades mais sustentáveis e com a menor emissão de carbono do Brasil</p>
-      <img class="img" src="img_leandro/Destino_pop_1.jpg" alt="Imagem de uma passarela">
-      <img class="img" src="img_leandro/Destino_pop_2.jpg" alt="Imagem de um mar com um barco">
-      <img class="img" src="img_leandro/Destino_pop_3.jpg" alt="Imagem de uma trilha na mata">
-      <img class="img" src="img_leandro/Destino_pop_4.jpg" alt="Imagem de um rio">
-      <h3>Alagoas</h3>
-      <p>Alagoas é um dos estados mais bonitos do Brasil, com praias paradisíacas e uma cultura riquíssima.</p>
-      <h3>Florianópolis</h3>
-      <p>Florianópolis é a capital do estado de Santa Catarina, no sul do Brasil. É formada principalmente pela Ilha de Santa Catarina, com 54 km de praias, lagoas, dunas e montanhas cobertas de Mata Atlântica.</p>
-      <h3>Bonito</h3>
-      <p>Bonito é um município brasileiro da região Centro-Oeste, situado no estado de Mato Grosso do Sul. Sua população, conforme estimativas do IBGE de 2019, era de 21 867 habitantes.</p>
-      <h3>Chapada dos Veadeiros</h3>
-      <p>A Chapada dos Veadeiros é uma região de serras, situada no nordeste do estado de Goiás, Brasil. É conhecida pelos seus rios de águas cristalinas, cachoeiras e piscinas naturais.</p>
     </div>
+    <p>Aqui você encontra as cidades mais sustentáveis e com a menor emissão de carbono do Brasil</p><br>
+    <p class="titulo-mobile-carrousel">Arraste para o lado</p>
+  </div>
+  <div class="slide-container swiper">
+    <div class="slide-content">
+      <div class="card-wrapper swiper-wrapper">
+        <div class="card swiper-slide">
+          <div class="image-content">
+            <div class="card-image">
+              <img src="img_leandro/Destino_pop_1.jpg" class="card-img" alt="Imagem da chapada dos veadeiros">
+            </div>
+          </div>
+          <div class="card-content">
+            <h2 class="name">Chapada dos Veadeiros - GO</h2>
+            <p class="description">A chapada dos veadeiros é totalmente Ecológica e sustentável, com baixa emissão de carbono. É conhecido pelos deslumbrantes desfiladeiros e formações de cristais de quartzo.</p>
+            <button class="button-carrossel"><a href="/">Veja mais</a></button>
+          </div>
+        </div>
+        <div class="card swiper-slide">
+          <div class="image-content">
+            <div class="card-image">
+              <img src="img_leandro/card-bonito-ms.png" class="card-img" alt="Imagem da chapada dos veadeiros">
+            </div>
+          </div>
+          <div class="card-content">
+            <h2 class="name">Bonito - MS</h2>
+            <p class="description">Bonito é uma cidade e centro de ecoturismo no estado brasileiro de Mato Grosso do Sul. A área é conhecida pelos rios de água translúcida, como o Rio da Prata repleto de peixes.</p>
+            </p>
+            <button class="button-carrossel"><a href="/">Veja mais</a></button>
+          </div>
+        </div>
+        <div class="card swiper-slide">
+          <div class="image-content">
+            <span class="overlay"></span>
 
-    <div> <!-- tag de divisão dos serviços do site -->
-      <h3>Certificação Ecológica</h3>
-      <p>Oferecemos destinos ecológicos com baixas emissoões de carbono. Se você encontrar uma opção mais sustentável em outrolugar, avise-nos</p>
-      <img class="img" src="img_leandro/certificado_eco.png" alt="Selo certificado">
-      <h3>Hotéis Flexíveis</h3>
-      <p>Precisa viajar para um lugar ecológico e ficar em um hotel sustentável? Também possuímos essa ferramenta para a sua comodidade</p>
-      <img class="img" src="img_leandro/hotel_icon.png" alt="Selo hotel">
-      <h3>Locais limpos e ecológicos</h3>
-      <p>Se você quer viajar para um local livre de poluição e com baixa emissão de carbono, nós temos a solução para você. Encontre os melhores destinos ecológicos do Brasil</p>
-      <img class="img" src="img_leandro/ecologico_icon.png" alt="Selo se energia eólica">
+            <div class="card-image">
+              <img src="img_leandro/Card-Palhoca.jpg" class="card-img" alt="Imagem da chapada dos veadeiros">
+            </div>
+          </div>
+          <div class="card-content">
+            <h2 class="name">Palhoça - SC</h2>
+            <p class="description">A Guarda do Embaú é a principal atração turística de Palhoça, uma vila de pescadores localizado entre dunas, serra e rio e mar.</p><br>
+            </p>
+            <button class="button-carrossel"><a href="/">Veja mais</a></button>
+          </div>
+        </div>
+        <div class="card swiper-slide">
+          <div class="image-content">
+            <span class="overlay"></span>
+            <div class="card-image">
+              <img src="img_leandro/Card-rio-de-janeiro.jpg" class="card-img" alt="Imagem da chapada dos veadeiros">
+            </div>
+          </div>
+          <div class="card-content">
+            <h2 class="name">Rio de Janeiro - RJ</h2>
+            <p class="description">O Rio de Janeiro possui a maior floresta urbana do mundo, seja no céu, na terra ou no mar, a cidade oferece diversas opções de ecoturismo.</p><br>
+            <button class="button-carrossel"><a href="/">Veja mais</a></button>
+          </div>
+        </div>
+        <div class="card swiper-slide">
+          <div class="image-content">
+            <span class="overlay"></span>
+
+            <div class="card-image">
+              <img src="img_leandro/Card-Fernando-Noronha.jpg" class="card-img" alt="Imagem da chapada dos veadeiros">
+            </div>
+          </div>
+          <div class="card-content">
+            <h2 class="name">Fernando de Noronha - PE</h2>
+            <p class="description">Este Patrimônio Mundial Natural reconhecido pela UNESCO conta areias douradas, mar em tons de azul turquesa e verde esmeralda. Conta com um vida marinha esplendorosa.</p>
+            </p>
+            <button class="button-carrossel"><a href="/">Veja mais</a></button>
+          </div>
+        </div>
+        <div class="card swiper-slide">
+          <div class="image-content">
+            <span class="overlay"></span>
+            <div class="card-image">
+              <img src="img_leandro/Card-Jalapao.jpg" class="card-img" alt="Imagem da chapada dos veadeiros">
+            </div>
+          </div>
+          <div class="card-content">
+            <h2 class="name">Jalapão - TO</h2>
+            <p class="description">Entre dunas douradas, paisagens grandiosas, fervedouros e cachoeiras, conheça as maravilhas do Jalapão, um destino que conquista cada vez mais os amantes do ecoturismo.</p>
+            </p>
+            <button class="button-carrossel"><a href="/">Veja mais</a></button>
+          </div>
+        </div>
+        <div class="card swiper-slide">
+          <div class="image-content">
+            <span class="overlay"></span>
+            <div class="card-image">
+              <img src="img_leandro/Card-Parque-da_Pedra_da_Boca.jpg" class="card-img" alt="Imagem da chapada dos veadeiros">
+            </div>
+          </div>
+          <div class="card-content">
+            <h2 class="name">Parque Estadual Pedra da Boca - PB</h2>
+            <p class="description">O Parque possui uma formações rochosas de grande beleza cênica com ecoturismo focado para quem ama aventuras.</p>
+            </p>
+            <button class="button-carrossel"><a href="/">Veja mais</a></button>
+          </div>
+        </div>
+        <div class="card swiper-slide">
+          <div class="image-content">
+            <span class="overlay"></span>
+            <div class="card-image">
+              <img src="img_leandro/Card-Manaus.jpg" class="card-img" alt="Imagem da chapada dos veadeiros">
+            </div>
+          </div>
+          <div class="card-content">
+            <h2 class="name">Manaus - AM</h2>
+            <p class="description">Ponto de partida importante próximo à Floresta Amazônica. Possui praias de água doce, comunidades indígenas, safári na selva, cachoeiras, museus, mercados populares e muito mais.
+            </p>
+            <button class="button-carrossel"><a href="/">Veja mais</a></button>
+          </div>
+        </div>
+        <div class="card swiper-slide">
+          <div class="image-content">
+            <span class="overlay"></span>
+
+            <div class="card-image">
+              <img src="img_leandro/Card-florianopolis.jpg" class="card-img" alt="Imagem da chapada dos veadeiros">
+            </div>
+          </div>
+          <div class="card-content">
+            <h2 class="name">Florianópolis - SC</h2>
+            <p class="description">Floripa não apenas tem belíssimas praias como também é um ótimo destino para o ecoturismo, tais como: passeios de escunas, trilhas, parques, mirantes e lagos.</p>
+            </p>
+            <button class="button-carrossel"><a href="/">Veja mais</a></button>
+          </div>
+        </div>
+      </div>
     </div>
-    <div> <!-- tag de divisão da calculadora de emissão de carbono -->
-      <img class="img_carbono" src="img_leandro/emissão_carbono.jpg" alt="Imagem da industria emitindo gases carbonicos">
-      <h2>Calculadora de carbono</h2>
-      <p>Atividade do dia a dia emitem, direta ou indiretamante, gases causadores das mudanças climáticas. Use a calculadora para descobrir sua pegada de carbono na sua viagem sustentável</p><br>
-      <button><a href="html/CalculadoraDeCarbono.html">Acesse aqui</a></button>
+    <div class="swiper-button-next swiper-navBtn"></div>
+    <div class="swiper-button-prev swiper-navBtn"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+  <div>
+    <h2 class="titulo-servico">Nossos serviços</h2>
+    <p>A missão da Freem é proporcionar destinos turísticos no Brasil com as emissões de carbono mais reduzidas.</p>
+  </div>
+  <div class="servico"> <!-- tag de divisão dos serviços do site -->
+    <div class="cont-servico">
+      <img class="img-servico" src="img_leandro/certificado_eco.png" alt="Selo certificado">
+      <h3>Certificação ecológica</h3>
+      <p class="text-servico">Selecionamos os destinos ecológicos com as menores emissões de carbono. Caso encontre uma opção mais sustentável em outro lugar, avise-nos</p>
     </div>
-  </main>
-  <footer> <!-- tag de rodapé -->
-    <h3>Freem</h3>
-    <p>Encontre seu destino ideal baseando-se na maior sustentabilidade</p>
-    <p>Freem Ecoturismo © 2023 </p> <!--colocar simbolo de marca comercial -->
-    <ul>
-      <li> <a ahref="/">Sobre nós</a></li>
-      <li> <a href="/">Contato</a></li>
-      <li> <a href="/">Termos de uso</a></li>
-      <li> <a href="/">Política de privacidade</li>
-    </ul>
+    <div class="cont-servico">
+      <img class="img-servico" src="img_leandro/hotel_icon.png" alt="Selo hotel">
+      <h3>Hotéis flexíveis</h3>
+      <p class="text-servico">Precisa viajar para um lugar ecológico e ficar em um hotel sustentável? Também possuímos essa ferramenta para a sua comodidade</p>
+    </div>
+    <div class="cont-servico">
+      <img class="img-servico" src="img_leandro/ecologico_icon.png" alt="Selo se energia eólica">
+      <h3>Calculadora de carbono</h3>
+      <p class="text-servico">Se você quer viajar para um local livre de poluição e com baixa emissão de carbono, nós temos a solução para você. Encontre os melhores destinos ecológicos do Brasil</p>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="container-footer">
+      <div class="row">
+        <div class="footer-col">
+          <h4>quem somos</h4>
+          <ul>
+            <li><a href="sobrenos.html">sobre nós</a></li>
+            <li><a href="#">nossos serviços</a></li>
+            <li><a href="#">política de privacidade</a></li>
+            <li><a href="#">nos avalie</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>nossos serviços</h4>
+          <ul>
+            <li><a href="#">calculadora de carbono</a></li>
+            <li><a href="#">escolha seu destino</a></li>
+            <li><a href="#">hotéis</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Fale conosco</h4>
+          <ul>
+            <li><a href="/ecotour/pagina-contato.html">Atendimento ao cliente</a></li>
+            <li><a href="/ecotour/pagina-contato.html">Contato</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>redes sociais</h4>
+          <div class="social-links">
+            <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Freem Ecoturismo © 2024 </p>
+      </div>
+    </div>
   </footer>
-</body>
+  <!-- Responsivo Header -->
+  <script src="leand-js/nav-menu.js"></script>
+  <!-- Swiper JS -->
+  <script src="carroussel-css-js/swiper-bundle.min.js"></script>
+  <!-- JavaScript -->
+  <script src="carroussel-css-js/carroussel.js"></script>
 
+</body>
 
 </html>

@@ -1,0 +1,512 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Josefin+Sans&family=Lobster&family=Poppins&display=swap");
+html {
+  scroll-behavior: smooth; /*isso serve para  */
+}
+body {
+  font-family: "poppins", sans-serif;
+  text-align: center; /*coloquei isso para a imagem principal ficar no centro */
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.5;
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+  justify-content: center; /*coloquei isso para fazer o carrossel */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+/* body * {
+  border: 1px solid red;
+} */
+#logo {
+  font-size: 25px;
+  /*coloquei isso para o logo ficar no inicio */
+}
+
+.logo-freem {
+  max-width: 70px;
+}
+.logo-menu {
+  color: #3e8914;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  /* margin-left: 3rem; */
+}
+
+.logo-menu a {
+  text-decoration: none;
+  color: #2d6e07;
+}
+.logo-menu a:hover {
+  transform: scale(1.06);
+  transition: all 0.2s ease;
+  color: #3e8914;
+}
+/* .icon_cabecalho {
+  max-width: 1.5rem;
+margin-right: -15px;
+
+} */
+.mobile-menu-icon {
+  display: none;
+}
+.mobile-menu {
+  display: none;
+}
+nav {
+  background-color: rgb(225, 225, 225);
+  position: fixed;
+  width: 100%;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 30px;
+  box-shadow: 0 0 20px #f5f5f5;
+  opacity: 0.9;
+  z-index: 1;
+}
+
+.nav-item:hover {
+  transform: scale(1.06);
+  transition: all 0.2s ease;
+}
+
+.login-button:hover {
+  transform: scale(1.06);
+  transition: all 0.2s ease;
+}
+.btn-mobile {
+  display: none;
+}
+.button-login {
+  background-color: #2d6e07;
+  color: #e8fccf;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.button-login:hover {
+  background-color: #3e8914;
+  color: #e8fccf;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #787676;
+}
+
+.lista-menu {
+  display: flex;
+  gap: 3rem;
+  margin-right: 3rem;
+  align-items: center;
+  font-weight: bold;
+}
+.img_principal {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.5s ease;
+}
+#box-calc {
+  background-image: url(/ecotour/img_leandro/fundo_calc_C02.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 10px;
+  position: relative;
+  display: inline-block;
+  width: 70%;
+  border-radius: 10px;
+  margin: -100px;
+  box-shadow: 0 0 10px rgba(46, 124, 31, 0.5);
+}
+#box-calc:hover {
+  transform: scale(1.05);
+  transition: all 0.5s ease;
+}
+.button-calc {
+  font-size: 18px;
+  color: white;
+  border-radius: 10px;
+  border: 1px solid #2d6e07;
+  padding: 12px;
+  margin: 8px;
+  background-color: #2d6e07;
+  color: #e8fccf;
+}
+.button-calc a {
+  color: #e8fccf;
+}
+.button-calc:hover {
+  background-color: #3e8914;
+}
+.destino-pop {
+  margin-top: 100px;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+.destino-pop,
+h2 {
+  font-size: 50px;
+  font-weight: bold;
+}
+#button-dest-pop {
+  color: white;
+  border-radius: 10px;
+  border: 1px solid rgb(255, 255, 255);
+  padding: 8px;
+  margin: 18px;
+  background-color: rgb(0, 0, 0);
+}
+.titulo-mobile-carrousel {
+  display: none;
+}
+.slide-container {
+  max-width: 1120px;
+  width: 100%;
+  padding: 40px 0;
+  z-index: 0;
+}
+.slide-content {
+  padding: 10px;
+  margin: 0 40px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+.card {
+  width: 320px;
+  border-radius: 25px;
+  background: #ffffff;
+}
+.image-content,
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+.image-content {
+  position: relative;
+  row-gap: 5px;
+  padding: 0 0;
+}
+.card-image {
+  /*card fica no centro */
+  position: relative;
+  height: 300px;
+  width: 300px;
+  padding: 3px;
+}
+.card-image .card-img {
+  /*imagem do card ficar no centro */
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10%;
+  border: 3px solid #004325;
+}
+.name {
+  /*nome do card ficar no centro */
+  font-size: 18px;
+  font-weight: 500;
+  color: #004325;
+}
+.description {
+  font-size: 14px;
+  color: #006035;
+  text-align: center;
+}
+.button-carrossel {
+  font-weight: bold;
+  border: none;
+  font-size: 16px;
+  color: #fff;
+  padding: 8px 16px;
+  background-color: #3e8914;
+  border-radius: 6px;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button-carrossel:hover {
+  color: #fff;
+  background-color: #004325;
+}
+.button-carrossel a {
+  color: #fff;
+}
+.button-carrossel a:hover {
+  color: #fff;
+}
+.card:hover {
+  /*card do carrossel aumenta */
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+.swiper-navBtn {
+  /*botão do carrossel troca de cor */
+  color: #3e8914;
+  transition: color 0.3s ease;
+}
+.swiper-navBtn:hover {
+  color: #004325;
+}
+.swiper-button-next {
+  /*botão do carrossel fica no canto */
+  right: 0;
+}
+.swiper-button-prev {
+  /*botão do carrossel fica no canto */
+  left: 0;
+}
+.swiper-pagination-bullet {
+  /*botão do carrossel troca de cor */
+  background-color: #3e8914;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active {
+  /*botão do carrossel troca de cor */
+  background-color: #004325;
+}
+
+.servico {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+.titulo-servico {
+  font-size: 50px;
+  font-weight: bold;
+}
+.cont-servico {
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /*cards ficam responsivos */
+  padding: 30px;
+}
+
+.container-footer {
+  max-width: 1170px;
+  margin: auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer {
+  background-color: #24262b;
+  padding: 70px 0;
+}
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+.footer-col h4 {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 5;
+  bottom: -10px;
+  background-color: #3e8914;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover {
+  color: #ffffff;
+  padding-left: 8px;
+}
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover {
+  color: #24262b;
+  background-color: #ffffff;
+}
+.copyright {
+  margin-top: 10px;
+  margin-bottom: -70px;
+  padding: 10px 0;
+  color: #ffffff;
+  font-size: 14px;
+  text-align: center;
+}
+/*responsivo*/
+
+@media screen and (max-width: 600px) {
+  /*coloquei isso para fazer o carrossel ficar responsivo */
+  .slide-content {
+    margin: 0 10px;
+  }
+  .swiper-navBtn {
+    display: none;
+  }
+  .titulo-mobile-carrousel {
+    display: block;
+    font-size: 25px;
+    font-weight: bold;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 574px) {
+  .footer-col {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 850px) {
+  .text-servico {
+    display: none;
+  }
+  .servico {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .nav-item {
+    display: none;
+  }
+  nav{
+    position: relative;
+  }
+}
+@media screen and (max-width: 550px) {
+  #titulo-calc {
+    font-size: 25px;
+  }
+  .button-calc {
+    margin-top: -30px;
+  }
+  nav {
+    gap: 10px;
+    padding: 0px;
+  }
+  .logo-freem {
+    display: none;
+  }
+  .titulo-servico {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .nav-menu {
+    padding: 1.5rem 4rem;
+  }
+  .nav-item {
+    display: none;
+  }
+  .login-button {
+    display: none;
+  }
+  .mobile-menu-icon {
+    display: block;
+  }
+  .mobile-menu-icon button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  .mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+  .mobile-menu .nav-item {
+    display: block;
+    padding-top: 1.2rem;
+  }
+  .mobile-menu .login-button {
+    display: block;
+    padding: 1rem 2rem;
+  }
+  .mobile-menu .login-button button {
+    width: 100%;
+  }
+  .open {
+    display: block;
+  }
+  .text-calc {
+    display: none;
+  }
+}
+
+/* @media (max-width: 768px) {
+  .lista_menu {
+    display: none;
+  }
+  .btn-mobile {
+    display: block;
+    cursor: pointer;
+  }
+  .btn-mobile img {
+    width: 40px;
+  }
+  .lista_menu {
+    display: none;
+  }
+} */
