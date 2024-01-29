@@ -429,6 +429,9 @@ h2 {
   .nav-item {
     display: none;
   }
+  nav{
+    position: relative;
+  }
 }
 @media screen and (max-width: 550px) {
   #titulo-calc {
