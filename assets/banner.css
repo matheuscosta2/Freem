@@ -51,6 +51,12 @@
     }
 }
 
+@media screen and (min-width: 1080px){
+    .banner{
+        margin-top: 4em;
+    }
+}
+
 @media screen and (min-width: 1728px){
     .banner__pesquisa{
         width: 35%;

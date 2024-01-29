@@ -19,7 +19,8 @@
 
 .tópicos__link{
     color: var(--branco);
-    padding: 1em;
+    padding: 0.5em;
+    border-radius: 10px;
     background-color: var(--laranja);
     text-decoration: none;
     font-size: 14px;

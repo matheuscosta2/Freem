@@ -28,10 +28,20 @@ hr{
 
     .lista-rodapé__titulo{
         margin-bottom: 2em;
+       
+        
     }
 
     .lista-rodapé__link{
         margin-bottom: 10px;
+    }
+
+    .sublinhado{
+        content: "";
+        background-color: #3e8914;
+        height: 2px;
+        margin-top: 0.8em;
+        width: 50px;
     }
 }
 
