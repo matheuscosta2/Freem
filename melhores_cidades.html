@@ -3,24 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="stylesheet" href="stylealex.css">
+    <link rel="stylesheet" href="carroussel-css-js/swiper-bundle.min.css" />
+  <!-- Galeria de Icones -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  
     <title>Melhores Cidades</title>
 </head>
 <body>
-    <header class="header" class="a">
-        <span><img src="img_alex/289311429-1a9b38f2-f3c3-42dd-ae3e-d7411d872f19.png" alt=""></span>
-        <ul class="menu">
-        <li><a href="index.html">Página inicial</a> </li>
-        <li><a href="melhores_cidades.html">Melhores cidades</a></li>
-        <li><a href="comparador_cidades.html">Comparador de cidades</a></li>
-        <li><a href="html/CalculadoraDeCarbono.html">Calculadora de carbono</a></li>
-        <li><a href="hoteis.html">Comparador de Hotéis</a></li>
-    </ul>
-    </header>
+    <header>
+        <nav class="nav-menu">
+          <div class="logo-menu"><img class="logo-freem" src="img_leandro/FREEMLogo.png" alt="Logotipo">
+            <h1><a href="index.html">Freem</a></h1>
+          </div>
+          <ul class="lista-menu">
+            <li class="nav-item"><a href="/">Encontre Hotéis Eco</a></li>
+            <li class="nav-item"><a href="/">Calculadora de CO²</a></li>
+            <li class="nav-item"><a href="/">Notícias</a></li>
+            <!-- <li class="nav-item"><a href="/">Avaliações</a></li> -->
+            <li class="login-button"><a href="tela_login.html">Login</a></li>
+            <li class="login-button"> <a href="cadastro_user1.html" class="button-login">Cadastrar</a></li>
+          </ul>
+          <div class="mobile-menu-icon">
+            <button onclick="menuShow()"><img class="icon" src="img_leandro/menu_white_36dp.svg" alt=""></button>
+          </div>
+          <div class="mobile-menu">
+            <ul>
+              <li class="nav-item"><a href="#" class="nav-link">Calculadora de CO²</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Hotéis Eco</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Login</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Cadastrar</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+    
     <main>
         <div>
         <h1>Top 5 Cidades Turísticas Ecologicas no Brasil</h1>
-        <h2>Descubra as 5 cidades turísticas do Brasil que mais preservam a Natureza</h2>
+        
     </div>
         <section>
          <div class="grid-alex">   
@@ -118,10 +140,55 @@
 
     
     </main>
-    <footer>
-        <li>Freem ®</li>
-
-    </footer>
+    <footer class="footer">
+        <div class="container-footer">
+          <div class="row">
+            <div class="footer-col">
+              <h4>quem somos</h4>
+              <ul>
+                <li><a href="sobrenos.html">sobre nós</a></li>
+                <li><a href="#">nossos serviços</a></li>
+                <li><a href="#">política de privacidade</a></li>
+                <li><a href="#">nos avalie</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>nossos serviços</h4>
+              <ul>
+                <li><a href="#">calculadora de carbono</a></li>
+                <li><a href="#">escolha seu destino</a></li>
+                <li><a href="#">hotéis</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Fale conosco</h4>
+              <ul>
+                <li><a href="/ecotour/pagina-contato.html">Atendimento ao cliente</a></li>
+                <li><a href="/ecotour/pagina-contato.html">Contato</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>redes sociais</h4>
+              <div class="social-links">
+                <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+    
+              </div>
+            </div>
+          </div>
+          <div class="copyright">
+            <p>Freem Ecoturismo © 2024 </p>
+          </div>
+        </div>
+      </footer>
+      <!-- Responsivo Header -->
+      <script src="leand-js/nav-menu.js"></script>
+      <!-- Swiper JS -->
+      <script src="carroussel-css-js/swiper-bundle.min.js"></script>
+      <!-- JavaScript -->
+      <script src="carroussel-css-js/carroussel.js"></script>
     
 </body>
 
