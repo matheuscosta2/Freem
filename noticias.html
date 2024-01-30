@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freem</title>
+    <link rel="stylesheet" href="assets/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@300;400;500;700&family=Roboto:wght@100;300;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Josefin+Sans:wght@400;700&family=Poppins:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <header class="cabeçalho">
+        <div class="container">
+            <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu" class="container__rótulo">
+                <span class="cabeçalho__menu-hamburger container__imagem"></span>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu__titulo">Categorias</li>
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">Encontre Hotéis Eco</a></li>
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">Calculadora de CO²</a></li>
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">Noticías</a></li>
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">Avaliações</a></li>
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">Login</a></li>
+            </ul>
+            <img src="./assets/img/FREEMLogo.png" alt="logo Freem" class="container_imagem_logo">
+            <h1 class="container__titulo"><b class="container__titulo--negrito">Freem</b></h1>
+        </div>
+        <div class="container__opções">
+            <ul class="opções">
+                <!--<input type="checkbox" id="opções-menu" class="opções__botão">
+            <label for="opções-menu" class="opções__rótulo">
+                <li class="opções__itens">Categorias</li>
+            </label>
+            <ul class="lista-menu">
+
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">Encontre Hotéis Eco</a></li>
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">Calculadora de CO²</a></li>
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">Noticías</a></li>
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">Avaliações</a></li>
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">Login</a></li>
+            </ul> -->
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">Encontre Hotéis Eco</a></li>
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">Calculadora de CO²</a></li>
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">Noticías</a></li>
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">Avaliações</a></li>
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">Login</a></li>
+                <button type="button" class="lista-menu__button"><a href="#" class="link-button">Cadastrar</a></button>
+            </ul>
+        </div>
+        <div class="container">
+            </a>
+            <a href="#" class="container__link">
+                <img src="./assets/img/Usuario.svg" alt="meu Perfil" class="container__imagem">
+                <!--<p class="container__texto">Meu perfil</p>-->
+            </a>
+        </div>
+    </header>
+    <section class="banner">
+        <h2 class="banner__titulo">Não sabe por onde começar?</h2>
+        <p class="banner__texto">Turismo sustentável: o que é e como praticá-lo!</p>
+
+    </section>
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Últimas Notícias</h2>
+        <!-- Slider main container -->
+        <div class="carrosel__container">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="./assets/img/1.1.png" alt="Imagem de lixo no oceano">
+                        <div class="swiper-slide-descrição">
+                            <article class="slider-descrição">Em 2040, o lixo nos oceanos poderá ser o triplo do atual.
+                            </article>
+
+                        </div>
+                        <button class="slider-botão">Veja mais</button>
+                    </div>
+                    <div class="swiper-slide"><img src="./assets/img/2.2.png" alt="Imagem de uma folha caindo">
+                        <div class="swiper-slide-descrição">
+                            <article class="slider-descrição">Em um lugar onde a natureza impera, queremos transformar a
+                                sustentabilidade em valor para impulsionar o desenvolvimento local.</article>
+                        </div>
+                        <button class="slider-botão">Veja mais</button>
+                    </div>
+                    <div class="swiper-slide"><img src="./assets/img/3.3.png" alt="Imagem de um mergulhador">
+                        <div class="swiper-slide-descrição">
+                            <article class="slider-descrição">Novo jeito de viajar: turismo pode ajudar a proteger
+                                natureza e comunidades.</article>
+                        </div>
+                        <button class="slider-botão">Veja mais</button>
+                    </div>
+                    <div class="swiper-slide"><img src="assets/img/4.4.png" alt="Imagem de pessoa numa trilha">
+                        <div class="swiper-slide-descrição">
+                            <article class="slider-descrição">Vivência, natureza, religiosidade, aventura. Tudo cabe no
+                                turismo sustentável.</article>
+                        </div>
+                        <button class="slider-botão">Clique aqui</button>
+                    </div>
+                    <div class="swiper-slide"><img src="assets/img/5.5.png" alt="imagem da floresta amazonica">
+                        <div class="swiper-slide-descrição">
+                            <article class="slider-descrição">O que muda nas viagens com o impacto ambiental.</article>
+                        </div>
+                        <button class="slider-botão">Veja mais</button>
+                    </div>
+                    <div class="swiper-slide"><img src="assets/img/6.6.png" alt="Imagem de poluição">
+                        <div class="swiper-slide-descrição">
+                            <article class="slider-descrição">Quais são os principais impactos das indústrias no meio
+                                ambiente?</article>
+                        </div>
+                        <button class="slider-botão">Veja mais</button>
+                    </div>
+                    ...
+                </div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+            <div class="card">
+                <div class="card__descrição">
+                    <div class="descrição">
+                        <h3 class="descrição__titulo">Talvez você também se interesse por...</h3>
+                        <h2 class="descrição__titulo-livro">Planeta Atlantida 2024 Redução de Co2</h2>
+                        <p class="descrição__texto">Estratégia na montagem do evento, proporcionaram uma redução de 64%
+                            no consumo de diesel.<br>105.584 Kg de Co2 foram poupados de emissão no ambiente.</p>
+                    </div>
+                    <img src="./assets/img/5.png" class="descrição__imagem" alt="imagem do planeta Atlantida">
+                </div>
+                <div class="card__botões">
+                    <ul class="botões">
+                    </ul>
+                    <a href="https://www.planetaatlantida.com.br/cuidando-do-planeta.html" class="botões__ancora"
+                        target="_blank">Saiba Mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Que tal uma boa leitura!!</h2>
+        <!-- Slider main container -->
+        <div class="carrosel__container">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="./assets/img/expedicao-oriente-livro.png"
+                            alt="Livro expedição oriente"></div>
+                    <div class="swiper-slide"><img src="./assets/img/lugares-distantes-livro.png" alt="">
+                    </div>
+                    <div class="swiper-slide"><img src="./assets/img/livro-ilha-grande.png" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/img/turismo-meio-ambiente-livro.png"
+                            alt="Livro sobre Liderança"></div>
+                    <div class="swiper-slide"><img src="assets/img/turismo-meio-ambiente-sustentabilidade.png"
+                            alt="Livro sobre MetricasAgeis"></div>
+                    <div class="swiper-slide"><img src="assets/img/sustainable-travel-livro.png" alt="">
+                    </div>
+                    ...
+                </div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+            <div class="card">
+                <div class="card__descrição">
+                    <div class="descrição">
+                        <h3 class="descrição__titulo">Turismo sustentável</h3>
+                        <h2 class="descrição__titulo-secundario">Tripé da sustentabilidade</h2>
+                        <p class="descrição__texto">“O turismo que considera plenamente seus atuais e futuros impactos
+                            econômicos, sociais e ambientais, abordando as necessidades dos visitantes, da indústria, do
+                            meio ambiente e das comunidades locais”.
+                        </p>
+                    </div>
+                    <img src="./assets/img/Sustentabilidade_dimensões.png" class="descrição__imagem" alt="">
+                </div>
+                <div class="card__botões">
+                    <ul class="botões">
+                    </ul>
+                    <a href="#" class="botões__ancora">Saiba Mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="tópicos">
+        <h2 class="tópicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+        <ul class="tópicos__lista">
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">Roteiros</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">Marketing Sustentável</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">Dicas de viagem</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">Hospedagem</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">Gastronomia</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">Praticas Sustentáveis</a>
+            </li>
+        </ul>
+    </section>
+    <section class="contato">
+        <div class="contato__descrição">
+            <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+            <!--<p class="contato__texto">Atualizações de e-books, novos livros, promoções e outros.</p>-->
+        </div>
+        <input type="email" placeholder="Cadastre seu e-mail" class="contato__email">
+    </section>
+    <hr />
+    <footer class="rodapé">
+
+        <ul class="lista-rodapé">
+            <li class="lista-rodapé__titulo">Quem somos
+                <div class="sublinhado"></div>
+            </li>
+            
+            <li class="lista-rodapé__item">
+
+                <a href="#" class="lista-rodapé__link">Sobre Nós</a>
+            </li>
+            <li class="lista-rodapé__item">
+
+                <a href="#" class="lista-rodapé__link">Nossos Serviços</a>
+            </li>
+            <li class="lista-rodapé__item">
+
+                <a href="#" class="lista-rodapé__link">Política de privacidade</a>
+            </li>
+            <li class="lista-rodapé__item">
+
+                <a href="#" class="lista-rodapé__link">Nos Avalie</a>
+            </li>
+        </ul>
+        <ul class="lista-rodapé">
+            <li class="lista-rodapé__titulo">Nossos Serviços
+                <div class="sublinhado"></div>
+            </li>
+            <li class="lista-rodapé__item">           
+                <a href="#" class="lista-rodapé__link">Calculadora de Carbono</a>
+            </li>
+            <li class="lista-rodapé__item">             
+                <a href="#" class="lista-rodapé__link">Escolha seu Destino</a>
+            </li>
+            <li class="lista-rodapé__item">                 
+                <a href="#" class="lista-rodapé__link">Hotéis</a>
+            </li>          
+        </ul>
+        <ul class="lista-rodapé">
+            <li class="lista-rodapé__titulo">Fale Conosco
+                <div class="sublinhado"></div>
+            </li>
+            <li class="lista-rodapé__item">           
+                <a href="#" class="lista-rodapé__link">Atendimento ao Cliente</a>
+            </li>
+            <li class="lista-rodapé__item">             
+                <a href="#" class="lista-rodapé__link">Contato</a>
+            </li>         
+        </ul>
+        <ul class="lista-rodapé">
+            <li class="lista-rodapé__titulo">Redes Socias
+                <div class="sublinhado"></div>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="./assets/img/Facebook_Rounded_Solid_icon-icons.com_61562.png" alt="Logo do Facebook">
+                <a href="https://www.facebook.com/" target="_blank" class="lista-rodapé__link">Facebook</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="./assets/img/instagram_black_logo_icon_147122.png" alt="Logo do Instagram">
+                <a href="https://www.instagram.com/" target="_blank" class="lista-rodapé__link">Instagram</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="./assets/img/LinkedIn_Rounded_Solid_icon-icons.com_61559.png" alt="Logo do Linkedin">
+                <a href="https://www.linkedin.com/" target="_blank" class="lista-rodapé__link">Linkedin</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="./assets/img/chat_communication_media_social_twitter_icon_123256.png" alt="Logo do Twitter">
+                <a href="https://twitter.com/" target="_blank" class="lista-rodapé__link">Twitter</a>
+            </li>
+        </ul>
+
+    </footer>
+
+    <div class="rodapé-copy">
+        <h2 class="rodapé__titulo">Freem Ecoturismo © 2024</h2>
+    </div>
+</body>
+
+</html>
