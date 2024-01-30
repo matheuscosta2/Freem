@@ -1,0 +1,87 @@
+
+
+body {
+  background-image: url(/ecotour/img_leandro/Destino_pop_4.jpg);
+  background-repeat: no-repeat;
+}
+
+.container-contato {
+  width: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.contact-box {
+  background: #fff;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  opacity: 0.9;
+}
+
+.contact-box .right .field {
+  height: 50px;
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #ccc;
+  padding: 0 15px;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.contact-box .right .field:focus {
+  border-color: #2d6e07;
+}
+
+.contact-box .right .field:nth-child(4) {
+  margin-bottom: 40px;
+}
+
+.contact-box .right .field:nth-child(5) {
+  height: 150px;
+  resize: none;
+}
+
+.contact-box .right .btn {
+  height: 50px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #2d6e07;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.field:hover {
+  transform: scale(1.01);
+  transition: all 0.3s ease;
+}
+.btn:hover {
+  transform: scale(1.03);
+  transition: all 0.3s ease;
+}
+@media screen and (max-width: 850px) {
+  .contact-box {
+    width: 50%;
+    flex-direction: column;
+    padding: 20px;
+    
+  }
+
+  .container-contato {
+    width: 100%;
+    flex-direction: row;
+  }
+}
