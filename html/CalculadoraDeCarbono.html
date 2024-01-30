@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Calculadora de Carbono</title>
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <script src="../js/FiltraCidadesDeCadaEstadoBrasileiro.js"></script>
+  <script src="../js/PopulaCidadesBrasileiras.js"></script>
+  <script src="../js/PopulaEstadosBrasileiros.js"></script>
+  
+
+  <script>
+    // Chamar a função para popular a lista de cidades, estados e correlaciona as cidades com os respectivos estados
+    window.onload = function () {
+      popularEstados();
+      popularCidades();
+      getCities();
+      // var script = document.createElement('script');
+      // script.src = "../js/ExibeResultadoCalculoCarbono.js";
+      // document.body.appendChild(script);
+    };
+  </script>
+</head>
+
+<body>
+  <h1>Calculadora de Carbono</h1>
+  <form id="carbon-calculator-form">
+    <label for="state-select">Estado:</label>
+    <select id="state-select" name="state-select" onchange="getCities()" aria-label="Seleção do Estado">
+      <option value="">Selecione o estado</option>
+    </select>
+
+    <label for="city-select">Cidade:</label>
+    <select id="city-select" name="city-select" aria-label="Seleção da cidade" disabled>
+      <option value="">Selecione a cidade</option>
+    </select>
+
+    <label for="transport-select">Meio de Transporte:</label>
+    <select id="transport-select" name="transport-select" aria-label="Seleção do meio de transporte">
+      <option value="">Selecione o meio de transporte</option>
+      <option value="car">Carro</option>
+      <option value="bus">Ônibus</option>
+      <option value="train">Trem</option>
+      <option value="plane">Avião</option>
+    </select>
+
+    <label for="distance-input">Distância (km):</label>
+    <input id="distance-input" name="distance-input" type="number" min="0" aria-label="Distância a ser percorrida" />
+
+    <label for="people-input">Número de Pessoas:</label>
+    <input id="people-input" name="people-input" type="number" min="1" aria-label="Número de pessoas na viagem" />
+
+    <label for="events-input">Número de Eventos:</label>
+    <input id="events-input" name="events-input" type="number" min="0"
+      aria-label="Número de eventos durante a viagem" />
+
+    <button type="button" id="carbon-calculator-form">Calcular Carbono</button>
+    <button type="button" id="clear-button">Limpar Dados</button>
+    <div id="result"></div>
+  </form>
+  <script src="../js/CalculaEmissaoDeCarbono.js"></script>
+</body>
+
+</html>
