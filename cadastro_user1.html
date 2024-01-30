@@ -1,18 +1,16 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login</title>
-  <link rel="stylesheet" href="./leand-css/login_css.css">
-  <link rel="stylesheet" href="leand-css/styleLP.css">
+  <title>Cadastro</title>
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="leand-css/styleLP.css">
+  <link rel="stylesheet" href="leand-css/cadastro_css1.css">
 </head>
 
 <body>
-
   <header>
     <nav class="nav-menu">
       <div class="logo-menu"><img class="logo-freem" src="img_leandro/FREEMLogo.png" alt="Logotipo">
@@ -39,23 +37,36 @@
       </div>
     </nav>
   </header>
-  <style>
-    nav {
-      position: inherit;
-    }
-  </style>
-  <div class="page">
-    <form method="POST" class="formLogin">
-      <h1>Freem login</h1>
-      <p>Digite os seus dados de acesso no campo abaixo.</p>
-      <label for="email">E-mail</label>
-      <input type="email" placeholder="Digite seu e-mail" autofocus="true" />
-      <label for="password">Senha</label>
-      <input type="password" placeholder="Digite sua senha" />
-      <a href="/">Esqueci minha senha</a>
-      <button><a href="index.html">Cadastrar</a></button>
-    </form>
-  </div>
+
+  <form action="">
+    <h2>Cadastro Freem</h2>
+    <label for="username">*Nome Completo:</label>
+    <input type="text" id="username" name="username" class="box-input">
+    <p id="username-helper" class="helper-text">Mensagem de ajuda</p>
+
+    <label for="username">*Username:</label>
+    <input type="text" id="username" name="username" class="box-input">
+    <p id="username-helper" class="helper-text">Mensagem de ajuda</p>
+
+    <label for="email">*E-mail:</label>
+    <input type="email" id="email" name="email" class="box-input">
+    <p id="email-helper" class="">Mensagem de ajuda</p>
+
+    <label for="idade" class="">Idade:</label>
+    <input type="number" id="idade" name="idade" class="box-input">
+    <p id="idade-helper" class="helper-text">Mensagem de ajuda</p>
+
+    <label for="senha">*Senha:</label>
+    <input type="password" id="senha" name="senha" class="box-input">
+    <p id="senha-helper" class="helper-text">Mensagem de ajuda</p>
+
+    <label for="confirma-senha">*Confirmar senha:</label>
+    <input type="password" id="confirma-senha" name="confirma-senha" class="box-input">
+    <p id="confirma-senha-helper" class="helper-text">Mensagem de ajuda</p>
+
+    <button type="submit" class="btn-cadastro"><a href="">Enviar</a></button>
+  </form>
+
   <footer class="footer">
     <div class="container-footer">
       <div class="row">
@@ -90,6 +101,7 @@
             <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
             <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
             <a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+
           </div>
         </div>
       </div>
@@ -98,6 +110,7 @@
       </div>
     </div>
   </footer>
+  <script src="leand-js/valida-formulario.js"></script>
   <!-- Responsivo Header -->
   <script src="leand-js/nav-menu.js"></script>
 </body>
