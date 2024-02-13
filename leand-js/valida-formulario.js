@@ -43,7 +43,7 @@ usernameInput.addEventListener("change", (e) => {
   }
 });
 
-//validação email
+// ---------- VALIDAÇÃO EMAIL ---------- //
 let emailInput = document.getElementById("email");
 let emailLabel = document.querySelector('label[for="email]');
 let emailHelper = document.getElementById("email-helper");
@@ -60,11 +60,12 @@ emailInput.addEventListener("change", function (event) {
   } else {
     emailInput.classList.add("error");
     emailHelper.innerText = "Email Inválido";
-    emailInput.classList.remove("correct");
     emailHelper.classList.add("visible");
+    emailInput.classList.remove("correct");
   }
 });
-//validação idade (maior ou igual a 18 anos)
+
+// ---------- VALIDAÇÃO IDADE ---------- //
 let idadeInput = document.getElementById("idade");
 let idadeLabel = document.querySelector('label[for="idade]');
 let idadeHelper = document.getElementById("idade-helper");
@@ -83,28 +84,44 @@ idadeInput.addEventListener("change", function (e) {
   }
 });
 
-//validação dos 2 campos de senha
+// ---------- CAMPOS CONFIRMA SENHA ---------- //
 let senhaInput = document.getElementById("senha");
-let senhaLabel = document.querySelector('label[for="senha]');
+let senhaLabel = document.querySelector('label[for="senha"]');
 let senhaHelper = document.getElementById("senha-helper");
 
-let senhaConfirmInput = document.getElementById("confirma-senha");
-let senhaConfirmLabel = document.querySelector('label[for="confirma-senha]');
-let senhaConfirmHelper = document.getElementById("confirma-senha-helper");
+//validar senha
 
-mostrarPopup(senhaInput, senhaLabel);
-mostrarPopup(senhaConfirmInput, senhaConfirmLabel);
-
-senhaConfirmInput.addEventListener("change", function (e) {
+senhaInput.addEventListener("blur", function (e) {
   let valor = e.target.value;
 
-  if (valor === senhaInput.value) {
-    senhaConfirmInput.classList.remove("error");
-    senhaConfirmHelper.classList.remove("visible");
-    senhaConfirmInput.classList.add("correct");
+  if (valor.length == "") {
+    senhaInput.classList.add("error");
+    senhaHelper.innerText = "Sua senha não pode estar vazia";
+    senhaHelper.classList.add("visible");
+  } else if (valor.length < 8) {
+    senhaInput.classList.add("error");
+    senhaHelper.innerText = "Sua senha deve ter 8 ou mais caracteres";
+    senhaHelper.classList.add("visible");
   } else {
-    senhaConfirmInput.classList.add("error");
-    senhaConfirmHelper.innerText = "As senhas não conferem";
-    senhaConfirmHelper.classList.add("visible");
+    senhaInput.classList.remove("error");
+    senhaHelper.classList.remove("visible");
+  }
+});
+
+let confirmaSenhaInput = document.getElementById("confirma-senha");
+let confirmaSenhaLabel = document.querySelector('label[for="confirma-senha"]');
+let confirmaSenhaHelper = document.getElementById("confirma-senha-helper");
+
+confirmaSenhaInput.addEventListener("blur", function (e) {
+  let valor = e.target.value;
+  let senha = senhaInput.value;
+
+  if (valor !== senha) {
+    confirmaSenhaInput.classList.add("error");
+    confirmaSenhaHelper.innerText = "As senhas não conferem";
+    confirmaSenhaHelper.classList.add("visible");
+  } else {
+    confirmaSenhaInput.classList.remove("error");
+    confirmaSenhaHelper.classList.remove("visible");
   }
 });

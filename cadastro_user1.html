@@ -40,29 +40,38 @@
 
   <form action="">
     <h2>Cadastro Freem</h2>
-    <label for="username">*Nome Completo:</label>
-    <input type="text" id="username" name="username" class="box-input">
-    <p id="username-helper" class="helper-text">Mensagem de ajuda</p>
+    <label for="full-name">*Nome Completo:</label>
+    <input type="text" id="full-name" name="full-name" class="">
+    <p id="full-name-helper" class="helper-text">Mensagem de ajuda</p>
 
     <label for="username">*Username:</label>
-    <input type="text" id="username" name="username" class="box-input">
+    <input type="text" id="username" name="username" class="">
     <p id="username-helper" class="helper-text">Mensagem de ajuda</p>
 
     <label for="email">*E-mail:</label>
-    <input type="email" id="email" name="email" class="box-input">
-    <p id="email-helper" class="">Mensagem de ajuda</p>
+    <input type="email" id="email" name="email" class="">
+    <p id="email-helper" class="helper-text">Mensagem de ajuda</p>
 
     <label for="idade" class="">Idade:</label>
-    <input type="number" id="idade" name="idade" class="box-input">
+    <input type="number" id="idade" name="idade">
     <p id="idade-helper" class="helper-text">Mensagem de ajuda</p>
 
     <label for="senha">*Senha:</label>
-    <input type="password" id="senha" name="senha" class="box-input">
+    <input type="password" id="senha" name="senha">
     <p id="senha-helper" class="helper-text">Mensagem de ajuda</p>
 
     <label for="confirma-senha">*Confirmar senha:</label>
-    <input type="password" id="confirma-senha" name="confirma-senha" class="box-input">
+    <input type="password" id="confirma-senha" name="confirma-senha">
     <p id="confirma-senha-helper" class="helper-text">Mensagem de ajuda</p>
+    <div>
+      <p>
+        * Campos obrigatórios
+      </p>
+      <p>
+        <input type="checkbox" id="termos" name="termos" value="termos">
+        <label for="termos">Aceito os <a href=""><b>termos de uso</b></a></label>
+      </p>
+    </div>
 
     <button type="submit" class="btn-cadastro"><a href="">Enviar</a></button>
   </form>
@@ -110,7 +119,7 @@
       </div>
     </div>
   </footer>
-  <script src="leand-js/valida-formulario.js"></script>
+  <script src="/ecotour/leand-js/valida-formulario.js"></script>
   <!-- Responsivo Header -->
   <script src="leand-js/nav-menu.js"></script>
 </body>
