@@ -9,6 +9,11 @@ hr{
     
 }
 
+.lista-rodapé{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .rodapé__titulo{
     color: var(--branco);
     text-align: center;

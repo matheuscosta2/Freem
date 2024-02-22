@@ -3,23 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylealex.css">
+    <link rel="stylesheet" href="carroussel-css-js/swiper-bundle.min.css" />
+  <!-- Galeria de Icones -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <title>Fernando de Noronha  - PE</title>
 </head>
 <body>
-    <header>
-        <span>Freem</span>
-        <li><a href="index.html">Página inicial</a></li>
-        <li><a href="melhores_cidades.html">Melhores cidades</a></li>
-        <li><a href="comparador_cidades.html">Comparador de cidades</a></li>
-        <li><a href="html/CalculadoraDeCarbono.html">Calculadora de carbono</a></li>
-        <li><a href="hoteis.html">Comparador de Hotéis</a></li>
-
-    </header>
+  <header>
+    <nav class="nav-menu">
+      <div class="logo-menu"><img class="logo-freem" src="img_leandro/FREEMLogo.png" alt="Logotipo">
+        <h1><a href="index.html">Freem</a></h1>
+      </div>
+      <ul class="lista-menu">
+        <li class="nav-item"><a href="hoteis.html">Encontre Hotéis Eco</a></li>
+        <li class="nav-item"><a href="melhores_cidades.html">Top 5 Cidades</a></li>
+        <li class="nav-item"><a href="html/CalculadoraDeCarbono.html">Calculadora de CO²</a></li>
+        <li class="nav-item"><a href="noticias.html">Notícias</a></li>
+        <!-- <li class="nav-item"><a href="/">Avaliações</a></li> -->
+        <li class="login-button"><a href="tela_login.html">Login</a></li>
+        <li class="login-button"> <a href="cadastro_user1.html" class="button-login">Cadastrar</a></li>
+      </ul>
+      <div class="mobile-menu-icon">
+        <button onclick="menuShow()"><img class="icon" src="img_leandro/menu_white_36dp.svg" alt=""></button>
+      </div>
+      <div class="mobile-menu">
+        <ul>
+          <li class="nav-item"><a href="html/CalculadoraDeCarbono.html" class="nav-link">Calculadora de CO²</a></li>
+          <li class="nav-item"><a href="melhores_cidades.html" class="nav-link">TOP 5 Cidades</a></li>
+          <li class="nav-item"><a href="hoteis.html" class="nav-link">Hotéis Eco</a></li>
+          <li class="nav-item"><a href="tela_login.html" class="nav-link">Login</a></li>
+          <li class="nav-item"><a href="cadastro_user1.html" class="nav-link">Cadastrar</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
     <main>
+      <div class="botaovoltar1">
+        <button class="botaovoltar"><a href="melhores_cidades.html">Voltar ao TOP 5</a></button>
+    </div>
         <h1>Fernando de Noronha - PE</h1>
-        <section>
+        <section class="estilocidades">
           <div>
             <div>
+              <div class="fotoscidades">
+                <img src="img_alex/fernando-de-noronha.jpg" alt="fernando-de-noronha">
+              </div>
                 <h3>Bem-vindo a Fernando de Noronha - Um Paraíso Ecológico no Atlântico!</h3>
                 <p>Fernando de Noronha é um arquipélago brasileiro situado no Oceano Atlântico, conhecido por suas praias paradisíacas, vida marinha rica e conservação ambiental. Está localizado a aproximadamente 545 km da costa nordeste do Brasil, sendo uma parte do estado de Pernambuco. A maior parte do arquipélago é protegida pelo Parque Nacional Marinho de Fernando de Noronha, uma área de preservação que visa conservar a fauna e flora marinhas.</p>
             </div>
@@ -40,6 +69,10 @@
                 </ul>
                 <p>Lembre-se de que Fernando de Noronha é uma área protegida, e o número de visitantes é controlado para preservar o ecossistema. Planeje com antecedência e esteja ciente das regulamentações locais para garantir uma visita responsável e sustentável a este paraíso natural.</p>
             </div>
+            <div class="fotoscidades">
+              <img src="img_alex/Fernando_de_Noronha_-_Mirantes_dos_Golfinhos,_Baía_do_Sancho.jpg" alt="">
+              <span><i>Foto do Mirante dos Golfinhos</i></span>
+            </div>
             <div>
                 <h3>Ecoturismo Responsável</h3>
                 <p>Fernando de Noronha é um destino de ecoturismo conhecido pela sua rica biodiversidade e belezas naturais. Ao visitar a ilha, é essencial adotar práticas de ecoturismo responsável para ajudar a preservar o ambiente único de Fernando de Noronha. Aqui estão algumas diretrizes e dicas para um ecoturismo responsável na ilha:</p>
@@ -57,6 +90,10 @@
                 </ul>
                 <p>Ao adotar essas práticas durante a sua visita, você contribuirá para a preservação da beleza única de Fernando de Noronha e ajudará a manter esse destino como um exemplo de ecoturismo responsável.</p>
 
+            </div>
+            <div class="fotoscidades">
+              <img src="img_alex/Ilhas_Secundárias_do_arquipélago_de_Fernando_de_Noronha.jpg" alt="">
+              <span><i>Foto de Ilhas secundarias do Arquipélogo</i></span>
             </div>
             <div>
                 <h3>Melhor época para Visitar</h3>
@@ -100,13 +137,61 @@
                 <p>Ao explorar a culinária em Fernando de Noronha, é uma ótima ideia experimentar pratos que destaquem a frescura dos ingredientes locais e a riqueza da tradição gastronômica nordestina, adaptada à singularidade da ilha.</p>
             </div>
             <p>Fernando de Noronha é um destino único que combina a beleza natural com esforços significativos de preservação ambiental. Ao explorar este paraíso ecológico, os visitantes têm a oportunidade de se conectar com a natureza e contribuir para a sustentabilidade desse ecossistema maravilhoso. Descubra a magia de Fernando de Noronha, onde a conservação é uma prioridade e a natureza é celebrada!</p>
-        </section>
+            <div class="botaovoltar1">
+              <button class="botaovoltar"><a href="melhores_cidades.html">Voltar ao TOP 5</a></button>
+          </div>
+          </section>
 
     </main>
-    <footer>
-        <li>Freem ®</li>
-
+    <footer class="footer">
+      <div class="container-footer">
+        <div class="row">
+          <div class="footer-col">
+            <h4>quem somos</h4>
+            <ul>
+              <li><a href="sobrenos.html">sobre nós</a></li>
+              <li><a href="#">nossos serviços</a></li>
+              <li><a href="#">política de privacidade</a></li>
+              <li><a href="#">nos avalie</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>nossos serviços</h4>
+            <ul>
+              <li><a href="html/CalculadoraDeCarbono.html">calculadora de carbono</a></li>
+                <li><a href="melhores_cidades.html">escolha seu destino</a></li>
+                <li><a href="hoteis.html">hotéis</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Fale conosco</h4>
+            <ul>
+              <li><a href="/ecotour/pagina-contato.html">Atendimento ao cliente</a></li>
+              <li><a href="/ecotour/pagina-contato.html">Contato</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>redes sociais</h4>
+            <div class="social-links">
+              <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+              <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+  
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>Freem Ecoturismo © 2024 </p>
+        </div>
+      </div>
     </footer>
+    <!-- Responsivo Header -->
+    <script src="leand-js/nav-menu.js"></script>
+    <!-- Swiper JS -->
+    <script src="carroussel-css-js/swiper-bundle.min.js"></script>
+    <!-- JavaScript -->
+    <script src="carroussel-css-js/carroussel.js"></script>
     
 </body>
 </html>

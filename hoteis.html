@@ -4,16 +4,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EcoTour Hotéis </title>
+    <title>Freem </title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 </head>
 
+
+
 <body>
+  <header>
+    <nav class="nav-menu">
+      <div class="logo-menu"><img class="logo-freem" src="img_leandro/FREEMLogo.png" alt="Logotipo">
+        <h1><a href="index.html">Freem</a></h1>
+      </div>
+      <ul class="lista-menu">
+        <li class="nav-item"><a href="hoteis.html">Encontre Hotéis Eco</a></li>
+        <li class="nav-item"><a href="melhores_cidades.html">Top 5 Cidades</a></li>
+        <li class="nav-item"><a href="html/CalculadoraDeCarbono.html">Calculadora de CO²</a></li>
+        <li class="nav-item"><a href="noticias.html">Notícias</a></li>
+        <!-- <li class="nav-item"><a href="/">Avaliações</a></li> -->
+        <li class="login-button"><a href="tela_login.html">Login</a></li>
+        <li class="login-button"> <a href="cadastro_user1.html" class="button-login">Cadastrar</a></li>
+      </ul>
+      <div class="mobile-menu-icon">
+        <button onclick="menuShow()"><img class="icon" src="img_leandro/menu_white_36dp.svg" alt=""></button>
+      </div>
+      <div class="mobile-menu">
+        <ul>
+          <li class="nav-item"><a href="html/CalculadoraDeCarbono.html" class="nav-link">Calculadora de CO²</a></li>
+          <li class="nav-item"><a href="melhores_cidades.html" class="nav-link">TOP 5 Cidades</a></li>
+          <li class="nav-item"><a href="hoteis.html" class="nav-link">Hotéis Eco</a></li>
+          <li class="nav-item"><a href="tela_login.html" class="nav-link">Login</a></li>
+          <li class="nav-item"><a href="cadastro_user1.html" class="nav-link">Cadastrar</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
     <div class="flex">
         <form class="form">       
 
-            <h1 class="titulos">EcoTour Hotéis</h1>
+            <h1 class="titulos">Freem</h1>
             <img class="incon" src="icons/clear-svgrepo-com.svg" alt="X">
             <h2  class="titulos_"> Filtro</h2>
         <div class="filtro">
@@ -21,20 +52,20 @@
             <label for="fname">Valor Minímo</label><br>
             <input type="text" value="R$245,00"><br>
             <label for="fname">Valor Máximo</label><br>
-            <input type="text" value="R$250,00"><br>
+            <input  type="text" value="R$250,00"><br>
         </div>
                 <h2  class="titulos_">Tipo de acomodação</h2>
 
                 <div class="incon_">
-                    <p class="incon_2">Cidades Ecológicas</p>
+                    <p class="incon_2"><a href="cidades_ecologicas.html"> Cidades Ecológicas</a></p>
                     <img class="incon_1" src="icons/casa.svg" alt="Cidades Ecológicas">
                 </div>
                 <div class="incon_">
-                    <p class="incon_2">Cidades Eco-Hotel</p>
+                    <p class="incon_2"><a href="eco-hotel.html">Eco-Hotel</a> </p>
                     <img class="incon_1" src="icons/hotel.svg" alt="Cidades Eco-Hotel">
                 </div>
                 <div class="incon_">
-                    <p class="incon_2">Trilhas Eco</p>
+                    <p class="incon_2"><a href="trilhas-eco.html">Trilhas Eco</a></p>
                     <img class="incon_1" src="icons/trilha.svg" alt="trilha">
                 </div>
                 <button class="button"> <span>Mostrar resultados</span> </button>
@@ -46,8 +77,7 @@
                 <input class="busca" type="text" name="Buscar destinos sustentáveis"
                     placeholder="Buscar destinos sustentáveis*">
                 <img class="lupa" src="img/lupa.png" alt="Lupa">
-                <button>Entrar</button>
-                <p class="resultados">31 resultados em Brasil</p>
+               
             </div>
 
             <div class="flexbox">           
@@ -61,7 +91,7 @@
                 <div  class="form_1">
                     <img class="img" src="img/Rectangle 41.png">
                     <h2  class="titulos_">Loft sustentável</h2>
-                    <p class="paragrafo">Loft sustentavel construido numa fazenda de permacultura</p>
+                    <p class="paragrafo">Loft sustentavel construido numa fazenda</p>
                     <p class="valor"> R$245,00/diária</p>
                 </div>
             </div>
@@ -82,24 +112,51 @@
             </div>
         </section>
     </div>
-    <footer>
-        <div class="eco">
-            <h1>EcoTour</h1>
-            <p>Encontre seu local sustentável ideal, desde 2023</p>
-            <p>EcoTour 2022</p>
+    
+       
+    <footer class="footer">
+        <div class="container-footer">
+          <div class="row">
+            <div class="footer-col">
+              <h4>quem somos</h4>
+              <ul>
+                <li><a href="sobrenos.html">sobre nós</a></li>
+                <li><a href="#">nossos serviços</a></li>
+                <li><a href="#">política de privacidade</a></li>
+                <li><a href="#">nos avalie</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>nossos serviços</h4>
+              <ul>
+                <li><a href="html/CalculadoraDeCarbono.html">calculadora de carbono</a></li>
+                <li><a href="melhores_cidades.html">escolha seu destino</a></li>
+                <li><a href="hoteis.html">hotéis</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Fale conosco</h4>
+              <ul>
+                <li><a href="#">Atendimento ao cliente</a></li>
+                <li><a href="#">Contato</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>redes sociais</h4>
+              <div class="social-links">
+                <a href="https://www.facebook.com%22%3E/<i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com%22%3E/<i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+    
+              </div>
+            </div>
+          </div>
+          <div class="copyright">
+            <p>Freem Ecoturismo © 2024 </p>
+          </div>
         </div>
-        <div  class="eco">
-            <h2>Ajuda</h2>
-            <ul class="ajuda">
-                <li> <a href="#">Perguntas </a></li>
-                <li> <a href="#">Atendimento ao cliente </a></li>
-                <li> <a href="#">Fale conosco </a></li>
-
-            </ul>
-
-
-
-    </footer>
+      </footer>
     </div>
 </body>
 
