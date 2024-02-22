@@ -21,7 +21,7 @@
 }
 
 body{
-    background-color: var(--cor-de-fundo);
+    background-color: f5f5f5;
     font-family: var(--fonte-principal);
     font-size: 16px;
     font-weight: 400;

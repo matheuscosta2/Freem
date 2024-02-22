@@ -113,6 +113,10 @@
     display: none;
 }
 
+.link__page--principal{  
+    text-decoration: none;
+}
+
 @media screen and (min-width:1024px) {
 
     .container__titulo,
