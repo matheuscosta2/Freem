@@ -15,10 +15,11 @@ const swiper = new Swiper('.swiper', {
 });
 
 // Tópicos
-
+/*
 let topicosLista = document.querySelector(".tópicos__lista")
 console.log(topicosLista)
 topicosLista.addEventListener("click", ()=>{
-    console.log("clicou")
-     
+    console.log("clicou")    
 })
+*/
+

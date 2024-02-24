@@ -18,7 +18,8 @@
 .cabeçalho {
     background-color: rgb(225, 225, 225);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    gap: 3rem;
     align-items: center;
     position: relative;
 }
@@ -121,7 +122,7 @@
 
     .container__titulo,
     .container__titulo--negrito {
-        font-family: var(--fonte-secundaria);
+        font-family: var(--fonte-principal);
         font-size: 30px;
        
     }
@@ -194,7 +195,7 @@
     }
 
     .lista-menu__item:hover {
-        background: var(--verde);
+        color: rgb(83, 82, 82);
     }
 
     .lista-menu__item:hover>.lista-menu__link {

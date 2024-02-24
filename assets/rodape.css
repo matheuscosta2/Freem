@@ -4,14 +4,7 @@ hr{
 
 .rodapé{
     background-color: var( --fundo-footer);
-    padding: 1em;
-    
-    
-}
-
-.lista-rodapé{
-    display: flex;
-    flex-wrap: wrap;
+    padding: 1em; 
 }
 
 .rodapé__titulo{
@@ -32,13 +25,25 @@ hr{
     }
 
     .lista-rodapé__titulo{
-        margin-bottom: 2em;
-       
+        margin-bottom: 2em;  
         
     }
 
+    .lista-rodapé__itemrs{
+        display: inline-block;
+        justify-content: space-evenly;  
+    }
+
     .lista-rodapé__link{
-        margin-bottom: 10px;
+        padding-left: 8px;
+    }
+
+    .lista-rodapé__linkrs{
+        color: var(--branco);
+        text-decoration: none;
+        margin-right: 20px ;
+        margin-bottom: 2em;
+        
     }
 
     .sublinhado{
@@ -74,6 +79,12 @@ hr{
         color: var(--branco);
         text-decoration: none;
         margin-left: 0.6em;  
+    }
+
+    .lista-rodapé__linkrs{
+        color: var(--branco);
+        text-decoration: none;
+        margin-left: 0.6em; 
     }
 
     .lista-rodapé__titulo{
