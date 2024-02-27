@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="./leand-css/login_css.css">
   <link rel="stylesheet" href="leand-css/styleLP.css">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <script src="/ecotour/leand-js/valida-form-login.js" defer></script>
 </head>
 
 <body>
@@ -47,20 +48,23 @@
     }
   </style>
   <div class="page">
-    <form method="POST" class="formLogin">
+    <form action="" class="formLogin">
       <h1>Freem login</h1>
       <p>Digite os seus dados de acesso no campo abaixo.</p>
-      <label for="email">E-mail</label>
-      <input type="email" placeholder="Digite seu e-mail" autofocus="true" />
-      <label for="password">Senha</label>
-      <input type="password" placeholder="Digite sua senha" />
+      <label for="email">*E-mail:</label>
+      <input type="email" id="email" name="email" class="">
+      <p id="email-helper" class="helper-text">Mensagem de ajuda</p>
+
+
+
+
+
+      <label for="senha">*Senha:</label>
+      <input type="password" id="senha" name="senha">
+      <p id="senha-helper" class="helper-text">Mensagem de ajuda</p>
       <a href="/">Esqueci minha senha</a>
-<<<<<<<<< Temporary merge branch 1
-      <button><a href="index.html">Cadastrar</a></button>
-=========
       <input type="submit" value="Acessar" class="btn" />
       <input type="submit" value="Faça seu cadastro no Freem" class="btn-cadastro" />
->>>>>>>>> Temporary merge branch 2
     </form>
   </div>
   <footer class="footer">
