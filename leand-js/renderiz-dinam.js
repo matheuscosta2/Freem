@@ -1,3 +1,4 @@
+
 const renderizacaoDinamica = document.createElement("div");
 
 renderizacaoDinamica.innerHTML = `
@@ -5,6 +6,6 @@ renderizacaoDinamica.innerHTML = `
     <p class="text-calc">A calculadora de pegada de carbono é uma ferramenta inovadora que permite a você quantificar a quantidade de gases de efeito estufa que são emitidos como resultado de suas ações cotidianas. Utilize a nossa calculadora para determinar a pegada de carbono associada à sua jornada sustentável.</p><br>
     <button class="button-calc"><a href="html/CalculadoraDeCarbono.html">Calcular</a></button>`;
 
-const calcCarbono = document.querySelector("#box-calc");
-calcCarbono.appendChild(renderizacaoDinamica);
+const calcCarbono = document.querySelector("#box-calc"); // seleciona o elemento HTML com o id box-calc e armazena-o na variável calcCarbono
+calcCarbono.appendChild(renderizacaoDinamica); // adiciona o elemento renderizacaoDinamica como filho do elemento calcCarbono
 console.log(renderizacaoDinamica);

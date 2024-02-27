@@ -79,7 +79,7 @@ idadeInput.addEventListener("change", function (e) {
     idadeInput.classList.add("correct");
   } else {
     idadeInput.classList.add("error");
-    idadeHelper.innerText = "Você deve ter 18 anos  ou mais";
+    idadeHelper.innerText = "Você deve ter 14 anos  ou mais";
     idadeHelper.classList.add("visible");
   }
 });

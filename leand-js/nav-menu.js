@@ -10,3 +10,4 @@ function menuShow() {
     document.querySelector(".icon").src = "img_leandro/close_white_36dp.svg"; // altera a imagem do ícone do menu
   }
 }
+console.log(menuShow());

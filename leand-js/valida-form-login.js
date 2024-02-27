@@ -51,3 +51,4 @@ senhaInput.addEventListener("blur", function (e) {
     senhaHelper.classList.remove("visible");
   }
 });
+console.log(mostrarPopup());
