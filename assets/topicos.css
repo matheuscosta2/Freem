@@ -17,6 +17,11 @@
     justify-content: center;
 }
 
+.tópicos__lista-js:hover > :not(:hover){
+    opacity: .7;
+   transform: scale(0.9);
+}
+
 .tópicos__link{
     color: var(--branco);
     padding: 0.5em;

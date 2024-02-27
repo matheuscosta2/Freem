@@ -14,12 +14,10 @@ const swiper = new Swiper('.swiper', {
       },
 });
 
-// Tópicos
-/*
+// Efeito hover dinamicamente 
+
 let topicosLista = document.querySelector(".tópicos__lista")
-console.log(topicosLista)
-topicosLista.addEventListener("click", ()=>{
-    console.log("clicou")    
+topicosLista.addEventListener("mouseover", ()=>{
+    topicosLista.classList.add("tópicos__lista-js")
 })
-*/
 

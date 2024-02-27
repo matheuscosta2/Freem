@@ -221,7 +221,8 @@
     }
 
     .lista-menu__link{
-        font-weight: bold;
+        font-weight: inherit;
+        color: rgb(51, 50, 50);
     }
 }
 
