@@ -7,7 +7,7 @@
   <script src="../js/FiltraCidadesDeCadaEstadoBrasileiro.js"></script>
   <script src="../js/PopulaCidadesBrasileiras.js"></script>
   <script src="../js/PopulaEstadosBrasileiros.js"></script>
-  
+
 
   <script>
     // Chamar a função para popular a lista de cidades, estados e correlaciona as cidades com os respectivos estados
@@ -20,9 +20,37 @@
       // document.body.appendChild(script);
     };
   </script>
+  <link rel="stylesheet" href="/ecotour/leand-css/styleLP.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 </head>
 
 <body>
+  <header>
+    <nav class="nav-menu">
+      <div class="logo-menu"><img class="logo-freem" src="/ecotour/img_leandro/FREEMLogo.png" alt="Logotipo">
+        <h1><a href="index.html">Freem</a></h1>
+      </div>
+      <ul class="lista-menu">
+        <li class="nav-item"><a href="hoteis.html">Encontre Hotéis Eco</a></li>
+        <li class="nav-item"><a href="melhores_cidades.html">Top 5 Cidades Eco</a></li>
+        <li class="nav-item"><a href="noticias.html">Notícias</a></li>
+        <!-- <li class="nav-item"><a href="/">Avaliações</a></li> -->
+        <li class="login-button"><a href="tela_login.html">Login</a></li>
+        <li class="login-button"> <a href="cadastro_user1.html" class="button-login">Cadastrar</a></li>
+      </ul>
+      <div class="mobile-menu-icon">
+        <button onclick="menuShow()"><img class="icon" src="img_leandro/menu_white_36dp.svg" alt=""></button>
+      </div>
+      <div class="mobile-menu">
+        <ul>
+          <li class="nav-item"><a href="html/CalculadoraDeCarbono.html" class="nav-link">Calculadora de CO²</a></li>
+          <li class="nav-item"><a href="hoteis.html" class="nav-link">Hotéis Eco</a></li>
+          <li class="nav-item"><a href="tela_login.html" class="nav-link">Login</a></li>
+          <li class="nav-item"><a href="cadastro_user1.html" class="nav-link">Cadastrar</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header><br><br><br><br><br>
   <h1>Calculadora de Carbono</h1>
   <form id="carbon-calculator-form">
     <label for="state-select">Estado:</label>
@@ -51,14 +79,56 @@
     <input id="people-input" name="people-input" type="number" min="1" aria-label="Número de pessoas na viagem" />
 
     <label for="events-input">Número de Eventos:</label>
-    <input id="events-input" name="events-input" type="number" min="0"
-      aria-label="Número de eventos durante a viagem" />
+    <input id="events-input" name="events-input" type="number" min="0" aria-label="Número de eventos durante a viagem" />
 
     <button type="button" id="carbon-calculator-form">Calcular Carbono</button>
     <button type="button" id="clear-button">Limpar Dados</button>
     <div id="result"></div>
   </form>
   <script src="../js/CalculaEmissaoDeCarbono.js"></script>
+    <footer class="footer">
+      <div class="container-footer">
+        <div class="row">
+          <div class="footer-col">
+            <h4>quem somos</h4>
+            <ul>
+              <li><a href="sobrenos.html">sobre nós</a></li>
+              <li><a href="#">nossos serviços</a></li>
+              <li><a href="#">política de privacidade</a></li>
+              <li><a href="#">nos avalie</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>nossos serviços</h4>
+            <ul>
+              <li><a href="html/CalculadoraDeCarbono.html">calculadora de carbono</a></li>
+              <li><a href="melhores_cidades.html">escolha seu destino</a></li>
+              <li><a href="hoteis.html">hotéis</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Fale conosco</h4>
+            <ul>
+              <li><a href="/ecotour/pagina-contato.html">Atendimento ao cliente</a></li>
+              <li><a href="/ecotour/pagina-contato.html">Contato</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>redes sociais</h4>
+            <div class="social-links">
+              <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+              <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+    
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>Freem Ecoturismo © 2024 </p>
+        </div>
+      </div>
+    </footer>
 </body>
 
 </html>
